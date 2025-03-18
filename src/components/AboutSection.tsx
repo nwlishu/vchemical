@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const AboutSection: React.FC = () => {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-white md:h-[100vh] lg:h-[100vh]">
       <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
