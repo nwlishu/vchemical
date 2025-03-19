@@ -3,7 +3,7 @@ import React from "react";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import AboutSection from "@/components/AboutSection";
-import ProductSection from "@/components/ProductSection";
+// import ProductSection from "@/components/ProductSection";
 import StandardsSection from "@/components/StandardsSection";
 import ProductCatalog from "@/components/ProductCatalog";
 import TestimonialSection from "@/components/TestimonialSection";
@@ -19,7 +19,7 @@ export default function Home() {
       <main>
         <Hero />
         <AboutSection />
-        <ProductSection />
+        {/* <ProductSection /> */}
         <StandardsSection />
         <ProductCatalog />
         <TestimonialSection />

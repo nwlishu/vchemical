@@ -49,8 +49,8 @@ const ProductCard = ({
       <Image
         src={imageUrl}
         alt={name}
-        width={300}
-        height={300}
+        width={200}
+        height={200}
         className="object-cover rounded"
       />
       {/* </div> */}
@@ -86,22 +86,22 @@ const ProductCatalog: React.FC = () => {
     {
       code: "P2008-5G",
       name: "Polyanetholesulfonic acid sodium salt",
-      imageUrl: "/Placeholder.png",
+      imageUrl: "/product1.png",
     },
     {
       code: "P2008-5G",
       name: "Polyanetholesulfonic acid sodium salt",
-      imageUrl: "/Placeholder.png",
+      imageUrl: "/product1.png",
     },
     {
       code: "P2008-5G",
       name: "Polyanetholesulfonic acid sodium salt",
-      imageUrl: "/Placeholder.png",
+      imageUrl: "/product1.png",
     },
     {
       code: "P2008-5G",
       name: "Polyanetholesulfonic acid sodium salt",
-      imageUrl: "/Placeholder.png",
+      imageUrl: "/product1.png",
     },
   ];
 

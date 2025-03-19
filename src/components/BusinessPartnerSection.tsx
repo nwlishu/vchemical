@@ -7,6 +7,15 @@ const BusinessPartnerSection: React.FC = () => {
   return (
     <section className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16">
+        {/* <div>
+          <Image
+            src="/Placeholder.png"
+            alt="Business Partnership"
+            width={100}
+            height={100}
+            className="object-cover rounded-lg  "
+          />
+        </div> */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div>

@@ -84,7 +84,7 @@ const AboutSection: React.FC = () => {
             className="relative h-[400px] lg:h-[600px]"
           >
             <Image
-              src="/Placeholder.png"
+              src="/aboutsection.jpg"
               alt="About V-Chemical"
               fill
               className="object-cover rounded-lg"
