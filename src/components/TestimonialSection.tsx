@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import { motion } from "framer-motion";
 
 const TestimonialSection: React.FC = () => {
   return (
@@ -16,12 +17,18 @@ const TestimonialSection: React.FC = () => {
         </div>
 
         <blockquote className="mb-8">
-          <p className="text-2xl md:text-3xl font-medium text-[#15274B] leading-relaxed">
-            &rdquo;V Chemical and Machinery Co., Ltd. has been a reliable
+          <motion.p
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="text-2xl md:text-3xl font-medium text-[#15274B] leading-relaxed"
+          >
+            &ldquo;V Chemical and Machinery Co., Ltd. has been a reliable
             partner, consistently delivering quality products that meet our
             needs. Their commitment to excellence is unmatched in the
             industry.&rdquo;
-          </p>
+          </motion.p>
         </blockquote>
       </div>
     </section>

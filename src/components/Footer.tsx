@@ -6,24 +6,20 @@ import Link from "next/link";
 const Footer: React.FC = () => {
   return (
     <footer>
-      {/* Main Footer */}
       <div className="bg-[#15274B] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {/* Logo Column */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div>
               <Link href="/" className="inline-block mb-6">
                 <Image
                   src="/logo.png"
                   alt="V Chemical Logo"
-                  width={80}
-                  height={80}
-                  className="brightness-0 invert"
+                  width={60}
+                  height={60}
+                  // className="brightness-0 invert"
                 />
               </Link>
             </div>
-
-            {/* Quick Links */}
             <div>
               <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
               <ul className="space-y-2">
@@ -45,7 +41,6 @@ const Footer: React.FC = () => {
               </ul>
             </div>
 
-            {/* Contact Info */}
             <div>
               <h3 className="text-lg font-semibold mb-4">Email</h3>
               <p className="mb-4">vchem@hotmail.co.th</p>
@@ -57,21 +52,27 @@ const Footer: React.FC = () => {
 
               <h3 className="text-lg font-semibold mb-4">FAX</h3>
               <p>02-8834521</p>
+
+              <div className="mt-4">
+                <p className="text-sm leading-relaxed">
+                  65/1 จรัญสนิทวงศ์44 แขวงบางยี่ขัน
+                  <br />
+                  เขตบางพลัด กรุงเทพฯ 10700
+                </p>
+              </div>
             </div>
 
-            {/* Address */}
-            <div>
+            {/* <div>
               <p className="text-sm leading-relaxed">
                 65/1 จรัญสนิทวงศ์44 แขวงบางยี่ขัน
                 <br />
                 เขตบางพลัด กรุงเทพฯ 10700
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
 
-      {/* Bottom Footer */}
       <div className="bg-[#101d36] text-white py-4">
         <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16">
           <div className="flex flex-col md:flex-row justify-between items-center text-sm">

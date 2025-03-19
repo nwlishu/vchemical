@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const StatCard = ({
   number,
@@ -20,24 +21,26 @@ const StatCard = ({
 
 const ExcellenceSection: React.FC = () => {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-white md:h-[100vh] md:flex md:items-center">
       <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center md:h-full">
           {/* Left Content */}
-          <div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
             <span className="text-sm font-medium text-[#15274B] mb-2 block">
               Excellence
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#15274B] mb-6">
-              ความมุ่งมั่นของเราต่อคุณภาพ
-              <br />
-              และความน่าเชื่อถือ
+              ความมุ่งมั่นของเราต่อคุณภาพ และความน่าเชื่อถือ
             </h2>
             <p className="text-gray-600 mb-8">
               วัยประสบการณ์มากกว่า 25 ปี
               <br />
               เราภาคภูมิใจในการนำเสนอผลิตภัณฑ์ที่คุณภาพสูงให้กับลูกค้าของเรา
-              <br />
               ความมุ่งมั่นในคุณภาพของเราทำให้มั่นใจได้ว่าเรามาตรฐานอุตสาหกรรมที่สูงที่สุด
             </p>
 
@@ -58,17 +61,23 @@ const ExcellenceSection: React.FC = () => {
             >
               ติดต่อเรา
             </Link>
-          </div>
+          </motion.div>
 
           {/* Right Image */}
-          <div className="relative h-[500px]">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="relative h-[500px]"
+          >
             <Image
               src="/Placeholder.png"
               alt="Excellence in Quality"
               fill
               className="object-cover rounded-lg"
             />
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

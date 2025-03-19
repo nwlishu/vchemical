@@ -1,32 +1,41 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const FeatureCard = ({
   title,
   description,
-  className = "",
+  className,
 }: {
   title: string;
   description: string;
   className?: string;
-}) => {
-  return (
-    <div className={`text-center ${className}`}>
-      <h3 className="text-xl text-center font-bold text-[#15274B] mb-3">
-        {title}
-      </h3>
-      <p className="text-gray-600 text-center text-sm">{description}</p>
-    </div>
-  );
-};
+}) => (
+  <motion.div
+    initial={{ opacity: 0, y: 20 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true }}
+    transition={{ duration: 0.8, ease: "easeOut" }}
+    className={className}
+  >
+    <h3 className="text-xl font-bold text-[#15274B] mb-2">{title}</h3>
+    <p className="text-gray-600">{description}</p>
+  </motion.div>
+);
 
 const DeliverySection: React.FC = () => {
   return (
     <section className="py-20 bg-white md:h-[100vh] md:flex md:items-center">
       <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16">
         {/* Header */}
-        <div className="text-center mb-16">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="text-center mb-16"
+        >
           <h2 className="text-3xl md:text-4xl font-bold text-[#15274B] mb-6">
             กระบวนการจัดส่งและการขนส่ง
           </h2>
@@ -36,7 +45,7 @@ const DeliverySection: React.FC = () => {
             โดยเรามุ่งมั่นในการจัดส่งภายใน 48 ชั่วโมง
             เพื่อให้สามารถตอบสนองความต้องการเร่งด่วนของคุณได้ทันที
           </p>
-        </div>
+        </motion.div>
 
         {/* Three Column Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
@@ -55,14 +64,20 @@ const DeliverySection: React.FC = () => {
           </div>
 
           {/* Center Image */}
-          <div className="relative h-[400px] w-full">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="relative h-[400px] w-full"
+          >
             <Image
               src="/Placeholder.png"
               alt="Delivery Process"
               fill
               className="object-cover rounded-lg"
             />
-          </div>
+          </motion.div>
 
           {/* Right Features */}
           <div className="space-y-12">
