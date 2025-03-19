@@ -24,9 +24,9 @@ export default function Home() {
         <ProductCatalog />
         <TestimonialSection />
         <DeliverySection />
-        <ContactSection />
         <ExcellenceSection />
         <BusinessPartnerSection />
+        <ContactSection />
       </main>
     </>
   );

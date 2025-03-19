@@ -4,21 +4,17 @@ import Image from "next/image";
 
 const AboutSection: React.FC = () => {
   return (
-    <section className="py-20 bg-white md:h-[100vh] lg:h-[100vh]">
-      <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <section className="py-20 bg-white md:h-[100vh] lg:h-[100vh] md:flex md:items-center ">
+      <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16 ">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center  md:h-full">
           {/* Left Content */}
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-[#15274B] mb-6">
-              สัมผัสความมุ่งมั่นของเราในการ
-              <br />
-              ส่งมอบสารเคมีและโซลูชั่นเครื่องจักร
-              <br />
-              คุณภาพสูง
+              สัมผัสความมุ่งมั่นของเราในการ ส่งมอบสารเคมี คุณภาพสูง
             </h2>
             <p className="text-gray-600 mb-8">
               บริษัท วี เคมิคอล แอนด์ แมชินเนอรี่ จำกัด
-              เชี่ยวชาญในการนำเข้าและจัดจำหน่าย เคมีภัณฑ์และเครื่องจักรคุณภาพสูง
+              เชี่ยวชาญในการนำเข้าและจัดจำหน่าย เคมีภัณฑ์คุณภาพสูง
               เรามุ่งมั่นในการรักษามาตรฐานคุณภาพเพื่อให้มั่นใจ
               ว่าผลิตภัณฑ์ของเราตรงตามมาตรฐานอุตสาหกรรมสูงสุด
             </p>
@@ -44,7 +40,6 @@ const AboutSection: React.FC = () => {
               </div>
             </div>
           </div>
-
           {/* Right Image */}
           <div className="relative h-[400px] lg:h-[600px]">
             <Image

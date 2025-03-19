@@ -13,7 +13,9 @@ const FeatureCard = ({
 }) => {
   return (
     <div className={`text-center ${className}`}>
-      <h3 className="text-xl text-center font-bold text-[#15274B] mb-3">{title}</h3>
+      <h3 className="text-xl text-center font-bold text-[#15274B] mb-3">
+        {title}
+      </h3>
       <p className="text-gray-600 text-center text-sm">{description}</p>
     </div>
   );
@@ -21,7 +23,7 @@ const FeatureCard = ({
 
 const DeliverySection: React.FC = () => {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-white md:h-[100vh] md:flex md:items-center">
       <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16">
         {/* Header */}
         <div className="text-center mb-16">

@@ -4,15 +4,13 @@ import Image from "next/image";
 
 const StandardsSection: React.FC = () => {
   return (
-    <section className="py-20 bg-white md:h-[100vh] lg:h-[100vh]">
+    <section className="py-20 bg-white md:h-[100vh] lg:h-[100vh] md:flex md:items-center">
       <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center md:h-full">
           {/* Left Content */}
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-[#15274B] mb-6">
-              ความมุ่งมั่นของเราในการ
-              ปฏิบัติตามมาตรฐาน ISO และ
-              GMP
+              ความมุ่งมั่นของเราในการ ปฏิบัติตามมาตรฐาน ISO และ GMP
             </h2>
             <p className="text-gray-600 text-lg leading-relaxed">
               เราปฏิบัติตามมาตรฐาน ISO และ GMP

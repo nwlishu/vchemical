@@ -4,9 +4,9 @@ import Image from "next/image";
 
 const ProductSection: React.FC = () => {
   return (
-    <section className="py-20 bg-gray-50 md:h-[100vh]">
+    <section className="py-20 bg-gray-50 md:h-[100vh] md:flex md:items-center">
       <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center md:h-full">
           {/* Left Image */}
           <div className="relative h-[400px] lg:h-[600px]">
             <Image
