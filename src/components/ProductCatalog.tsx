@@ -19,6 +19,7 @@ const InfoCard = ({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay }}
+      className="bg-gray-50 p-6 rounded-xl"
     >
       <h3 className="text-lg font-semibold text-[#15274B] mb-2">{title}</h3>
       <p className="text-gray-600 text-sm leading-relaxed">{description}</p>
@@ -109,7 +110,7 @@ const ProductCatalog: React.FC = () => {
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16">
         {/* Header */}
-        <div className="mb-16 flex">
+        <div className="mb-16 flex flex-col md:flex-row md:gap-24">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -126,14 +127,14 @@ const ProductCatalog: React.FC = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <p className="text-gray-600 mb-12">
-              ที่บริษัท 3 เทคนิคอล แอนด์ แมชชีนเนอร์ จำกัด
+            <p className="text-gray-600 mb-8 ">
+              ที่บริษัท 3 เทคนิคอล แอนด์ แมชชีนเนอร์ จำกัด <br />
               เรามีความภูมิใจในการนำเสนอสารเคมีและเครื่องจักรที่มีคุณภาพสูงจากแบรนด์เฉพาะที่เราดูแลตลอดกระบวนการต่างๆ
               ความมุ่งมั่นของเราในด้านคุณภาพและความพึงพอใจของลูกค้าคือสิ่งที่ทำให้เราเติบโตในตลาดเสมอมา
             </p>
 
             {/* Info Cards */}
-            <div className="grid md:grid-cols-2 gap-8 mb-16">
+            <div className="grid md:grid-cols-2 gap-8 mb-4 ">
               <InfoCard
                 title="สารเคมีและเครื่องจักร"
                 description="ผลิตภัณฑ์ที่ผ่านมาตรฐาน ISO และ GMP เพื่อรองรับความต้องการในอุตสาหกรรมของคุณ"
@@ -142,7 +143,7 @@ const ProductCatalog: React.FC = () => {
               <InfoCard
                 title="การรับประกันคุณภาพ"
                 description="ใช้ระบบการตรวจสอบที่เชื่อถือได้ของเราเพื่อรองรับความเชื่อการจัดส่งเร่งด่วนของคุณ"
-                delay={0.6}
+                delay={0.4}
               />
             </div>
           </motion.div>
@@ -151,7 +152,7 @@ const ProductCatalog: React.FC = () => {
         {/* Product Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           {products.map((product, index) => (
-            <ProductCard key={index} {...product} delay={index * 0.1} />
+            <ProductCard key={index} {...product} delay={0.4} />
           ))}
         </div>
 
@@ -163,7 +164,7 @@ const ProductCatalog: React.FC = () => {
           transition={{ duration: 0.5, delay: 0.4 }}
           className="text-center mt-12 flex justify-end"
         >
-          <button className="bg-[#15274B] text-white px-8 py-3 rounded-lg hover:bg-blue-900 transition-colors">
+          <button className="bg-[#15274B] text-white px-8 py-3 rounded-full hover:bg-blue-900 transition-colors">
             สินค้าทั้งหมด
           </button>
         </motion.div>

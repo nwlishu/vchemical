@@ -57,7 +57,7 @@ const ExcellenceSection: React.FC = () => {
 
             <Link
               href="/contact"
-              className="inline-block bg-[#15274B] text-white hover:bg-blue-800 px-8 py-3 rounded-lg text-sm font-medium transition-colors duration-200"
+              className="inline-block bg-[#15274B] text-white hover:bg-blue-800 px-8 py-3 rounded-full text-sm font-medium transition-colors duration-200"
             >
               ติดต่อเรา
             </Link>
