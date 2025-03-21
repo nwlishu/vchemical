@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { useParams } from "next/navigation";
 
 interface Product {
@@ -49,6 +50,201 @@ const products: Product[] = [
       { label: "Storage", value: "Store in a cool, dry place" },
     ],
   },
+  {
+    id: 3,
+    name: "Zinc Oxide",
+    description: "ซิงค์ออกไซด์ สำหรับกระบวนการวัลคาไนซ์ยาง",
+    category: "เคมีภัณฑ์ยาง",
+    image: "/178365_0.jpg",
+    code: "ZnO",
+    specifications: [
+      { label: "CAS Number", value: "1317-11-7" },
+      { label: "Appearance", value: "White powder" },
+      { label: "Particle Size", value: "Average particle size varies" },
+      { label: "Surface Area", value: "Depends on particle size" },
+      { label: "Storage", value: "Store in a cool, dry place" },
+    ],
+  },
+  {
+    id: 4,
+    name: "Zinc Oxide",
+    description: "ซิงค์ออกไซด์ สำหรับกระบวนการวัลคาไนซ์ยาง",
+    category: "เคมีภัณฑ์ยาง",
+    image: "/178366_0.jpg",
+    code: "ZnO",
+    specifications: [
+      { label: "CAS Number", value: "1317-11-7" },
+      { label: "Appearance", value: "White powder" },
+      { label: "Particle Size", value: "Average particle size varies" },
+      { label: "Surface Area", value: "Depends on particle size" },
+      { label: "Storage", value: "Store in a cool, dry place" },
+    ],
+  },
+  {
+    id: 5,
+    name: "Zinc Oxide",
+    description: "ซิงค์ออกไซด์ สำหรับกระบวนการวัลคาไนซ์ยาง",
+    category: "เคมีภัณฑ์ยาง",
+    image: "/178367_0.jpg",
+    code: "ZnO",
+    specifications: [
+      { label: "CAS Number", value: "1317-11-7" },
+      { label: "Appearance", value: "White powder" },
+      { label: "Particle Size", value: "Average particle size varies" },
+      { label: "Surface Area", value: "Depends on particle size" },
+      { label: "Storage", value: "Store in a cool, dry place" },
+    ],
+  },
+  {
+    id: 6,
+    name: "Zinc Oxide",
+    description: "ซิงค์ออกไซด์ สำหรับกระบวนการวัลคาไนซ์ยาง",
+    category: "เคมีภัณฑ์ยาง",
+    image: "/178368_0.jpg",
+    code: "ZnO",
+    specifications: [
+      { label: "CAS Number", value: "1317-11-7" },
+      { label: "Appearance", value: "White powder" },
+      { label: "Particle Size", value: "Average particle size varies" },
+      { label: "Surface Area", value: "Depends on particle size" },
+      { label: "Storage", value: "Store in a cool, dry place" },
+    ],
+  },
+  {
+    id: 7,
+    name: "Zinc Oxide",
+    description: "ซิงค์ออกไซด์ สำหรับกระบวนการวัลคาไนซ์ยาง",
+    category: "เคมีภัณฑ์ยาง",
+    image: "/178369_0.jpg",
+    code: "ZnO",
+    specifications: [
+      { label: "CAS Number", value: "1317-11-7" },
+      { label: "Appearance", value: "White powder" },
+      { label: "Particle Size", value: "Average particle size varies" },
+      { label: "Surface Area", value: "Depends on particle size" },
+      { label: "Storage", value: "Store in a cool, dry place" },
+    ],
+  },
+  {
+    id: 8,
+    name: "Zinc Oxide",
+    description: "ซิงค์ออกไซด์ สำหรับกระบวนการวัลคาไนซ์ยาง",
+    category: "เคมีภัณฑ์ยาง",
+    image: "/178370_0.jpg",
+    code: "ZnO",
+    specifications: [
+      { label: "CAS Number", value: "1317-11-7" },
+      { label: "Appearance", value: "White powder" },
+      { label: "Particle Size", value: "Average particle size varies" },
+      { label: "Surface Area", value: "Depends on particle size" },
+      { label: "Storage", value: "Store in a cool, dry place" },
+    ],
+  },
+  {
+    id: 9,
+    name: "Zinc Oxide",
+    description: "ซิงค์ออกไซด์ สำหรับกระบวนการวัลคาไนซ์ยาง",
+    category: "เคมีภัณฑ์ยาง",
+    image: "/178371_0.jpg",
+    code: "ZnO",
+    specifications: [
+      { label: "CAS Number", value: "1317-11-7" },
+      { label: "Appearance", value: "White powder" },
+      { label: "Particle Size", value: "Average particle size varies" },
+      { label: "Surface Area", value: "Depends on particle size" },
+      { label: "Storage", value: "Store in a cool, dry place" },
+    ],
+  },
+  {
+    id: 10,
+    name: "Zinc Oxide",
+    description: "ซิงค์ออกไซด์ สำหรับกระบวนการวัลคาไนซ์ยาง",
+    category: "เคมีภัณฑ์ยาง",
+    image: "/178372_0.jpg",
+    code: "ZnO",
+    specifications: [
+      { label: "CAS Number", value: "1317-11-7" },
+      { label: "Appearance", value: "White powder" },
+      { label: "Particle Size", value: "Average particle size varies" },
+      { label: "Surface Area", value: "Depends on particle size" },
+      { label: "Storage", value: "Store in a cool, dry place" },
+    ],
+  },
+  {
+    id: 11,
+    name: "Zinc Oxide",
+    description: "ซิงค์ออกไซด์ สำหรับกระบวนการวัลคาไนซ์ยาง",
+    category: "เคมีภัณฑ์ยาง",
+    image: "/178373_0.jpg",
+    code: "ZnO",
+    specifications: [
+      { label: "CAS Number", value: "1317-11-7" },
+      { label: "Appearance", value: "White powder" },
+      { label: "Particle Size", value: "Average particle size varies" },
+      { label: "Surface Area", value: "Depends on particle size" },
+      { label: "Storage", value: "Store in a cool, dry place" },
+    ],
+  },
+  {
+    id: 12,
+    name: "Zinc Oxide",
+    description: "ซิงค์ออกไซด์ สำหรับกระบวนการวัลคาไนซ์ยาง",
+    category: "เคมีภัณฑ์ยาง",
+    image: "/178374_0.jpg",
+    code: "ZnO",
+    specifications: [
+      { label: "CAS Number", value: "1317-11-7" },
+      { label: "Appearance", value: "White powder" },
+      { label: "Particle Size", value: "Average particle size varies" },
+      { label: "Surface Area", value: "Depends on particle size" },
+      { label: "Storage", value: "Store in a cool, dry place" },
+    ],
+  },
+  {
+    id: 13,
+    name: "Zinc Oxide",
+    description: "ซิงค์ออกไซด์ สำหรับกระบวนการวัลคาไนซ์ยาง",
+    category: "เคมีภัณฑ์ยาง",
+    image: "/178375_0.jpg",
+    code: "ZnO",
+    specifications: [
+      { label: "CAS Number", value: "1317-11-7" },
+      { label: "Appearance", value: "White powder" },
+      { label: "Particle Size", value: "Average particle size varies" },
+      { label: "Surface Area", value: "Depends on particle size" },
+      { label: "Storage", value: "Store in a cool, dry place" },
+    ],
+  },
+  {
+    id: 14,
+    name: "Zinc Oxide",
+    description: "ซิงค์ออกไซด์ สำหรับกระบวนการวัลคาไนซ์ยาง",
+    category: "เคมีภัณฑ์ยาง",
+    image: "/178376_0.jpg",
+    code: "ZnO",
+    specifications: [
+      { label: "CAS Number", value: "1317-11-7" },
+      { label: "Appearance", value: "White powder" },
+      { label: "Particle Size", value: "Average particle size varies" },
+      { label: "Surface Area", value: "Depends on particle size" },
+      { label: "Storage", value: "Store in a cool, dry place" },
+    ],
+  },
+  {
+    id: 15,
+    name: "Zinc Oxide",
+    description: "ซิงค์ออกไซด์ สำหรับกระบวนการวัลคาไนซ์ยาง",
+    category: "เคมีภัณฑ์ยาง",
+    image: "/178377_0.jpg",
+    code: "ZnO",
+    specifications: [
+      { label: "CAS Number", value: "1317-11-7" },
+      { label: "Appearance", value: "White powder" },
+      { label: "Particle Size", value: "Average particle size varies" },
+      { label: "Surface Area", value: "Depends on particle size" },
+      { label: "Storage", value: "Store in a cool, dry place" },
+    ],
+  },
   // Add more products as needed
 ];
 
@@ -74,16 +270,20 @@ export default function ProductPage() {
 
   return (
     <div className="min-h-screen bg-gray-50 py-12">
-        
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <br/>
-      <hr/>
+        <p className="text-gray-600">
+          <Link href="/products">สินค้า</Link> / {product.name}
+        </p>
+        <br />
+        <hr className="border-gray-300" />
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           className=" overflow-hidden"
         >
+          <br />
+          <h1 className="text-3xl font-bold">ชื่อสินค้า : {product.name}</h1>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-8">
             {/* Product Image */}
             <div className="relative aspect-square">

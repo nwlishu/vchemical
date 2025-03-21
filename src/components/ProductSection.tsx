@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const ProductSection: React.FC = () => {
   return (
@@ -59,7 +60,7 @@ const ProductSection: React.FC = () => {
               whileTap={{ scale: 0.95 }}
               className="bg-[#15274B] text-white hover:bg-blue-800 px-8 py-3 rounded-lg text-sm font-medium transition-colors duration-200"
             >
-              ดูสินค้าทั้งหมด
+              <Link href="/products">ดูสินค้าทั้งหมด</Link>
             </motion.button>
           </motion.div>
         </div>

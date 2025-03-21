@@ -57,7 +57,7 @@ const BusinessPartnerSection: React.FC = () => {
             className="relative h-[600px] w-full"
           >
             <Image
-              src="/Placeholder.png"
+              src="/handshake-business-people.jpg"
               alt="Business Partnership"
               fill
               className="object-cover rounded-lg"

@@ -165,7 +165,7 @@ const ProductCatalog: React.FC = () => {
           className="text-center mt-12 flex justify-end"
         >
           <button className="bg-[#15274B] text-white px-8 py-3 rounded-full hover:bg-blue-900 transition-colors">
-            สินค้าทั้งหมด
+            <Link href="/products">สินค้าทั้งหมด</Link>
           </button>
         </motion.div>
       </div>

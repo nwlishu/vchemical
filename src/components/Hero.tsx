@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const Hero: React.FC = () => {
   return (
@@ -66,9 +67,9 @@ const Hero: React.FC = () => {
             transition={{ duration: 0.8, delay: 1.2 }}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="bg-[#ffff] hover:bg-blue-700 text-[#000] font-semibold py-3 px-8 rounded-full transition-colors duration-200"
+            className="bg-[#ffff]  text-[#000] font-semibold py-3 px-8 rounded-full transition-colors duration-200"
           >
-            เกี่ยวกับเรา
+            <Link   href="/about">เกี่ยวกับเรา</Link>
           </motion.button>
         </motion.div>
       </div>
