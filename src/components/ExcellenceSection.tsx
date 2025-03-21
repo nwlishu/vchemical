@@ -72,7 +72,7 @@ const ExcellenceSection: React.FC = () => {
             className="relative h-[500px]"
           >
             <Image
-              src="/Placeholder.png"
+              src="/pexels-fabriciohollanda-27670224.jpg"
               alt="Excellence in Quality"
               fill
               className="object-cover rounded-lg"

@@ -44,20 +44,20 @@ const ProductCard = ({
       whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay }}
-      className="bg-white flex gap-8"
+      className="bg-white flex gap-8 p-6 rounded-xl shadow-md hover:shadow-md transition-shadow duration-300"
     >
-      {/* <div className="relative aspect-square mb-6"> */}
-      <Image
-        src={imageUrl}
-        alt={name}
-        width={200}
-        height={200}
-        className="object-cover rounded"
-      />
-      {/* </div> */}
-      <div className="space-y-4">
-        <h3 className="font-bold text-[#15274B] text-lg">{code}</h3>
-        <p className="text-gray-600 text-base leading-relaxed">{name}</p>
+      <div className="relative w-48 h-48 flex-shrink-0">
+        <Image
+          src={imageUrl}
+          alt={name}
+          fill
+          className="object-cover rounded-lg"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        />
+      </div>
+      <div className="space-y-4 flex-grow">
+        <h3 className="font-bold text-[#15274B] text-lg">{name}</h3>
+        <p className="text-gray-600 text-base leading-relaxed">{code}</p>
         <Link
           href="#"
           className="inline-flex items-center text-[#15274B] hover:text-blue-700 font-medium"
@@ -85,24 +85,24 @@ const ProductCard = ({
 const ProductCatalog: React.FC = () => {
   const products = [
     {
-      code: "P2008-5G",
-      name: "Polyanetholesulfonic acid sodium salt",
-      imageUrl: "/product1.png",
+      code: "SK 3000",
+      name: "Latex Accelerator (กาว HOT AIR CURE)",
+      imageUrl: "/178363_0.jpg",
     },
     {
-      code: "P2008-5G",
-      name: "Polyanetholesulfonic acid sodium salt",
-      imageUrl: "/product1.png",
+      code: "PAZ 57",
+      name: "Tackifier and Homogenizing Agen",
+      imageUrl: "/178376_0.jpg",
     },
     {
-      code: "P2008-5G",
-      name: "Polyanetholesulfonic acid sodium salt",
-      imageUrl: "/product1.png",
+      code: "TOKUSIL",
+      name: "Silicon dioxide",
+      imageUrl: "/178366_0.jpg",
     },
     {
-      code: "P2008-5G",
-      name: "Polyanetholesulfonic acid sodium salt",
-      imageUrl: "/product1.png",
+      code: "TOKUSIL",
+      name: "Silicon dioxide",
+      imageUrl: "/178367_0.jpg",
     },
   ];
 

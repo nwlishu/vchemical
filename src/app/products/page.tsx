@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 interface Product {
   id: number;
@@ -9,6 +10,11 @@ interface Product {
   description: string;
   category: string;
   image: string;
+  code: string;
+  specifications: {
+    label: string;
+    value: string;
+  }[];
 }
 
 const ITEMS_PER_PAGE = 9;
@@ -24,17 +30,20 @@ const categories = [
 const ProductCard = ({ product }: { product: Product }) => (
   <motion.div
     initial={{ opacity: 0, y: 20 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    viewport={{ once: true }}
+    // whileInView={{ opacity: 1, y: 0 }}
+    animate={{ opacity: 1, y: 0 }}
+    // viewport={{ once: true }}
     transition={{ duration: 0.5 }}
     className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
   >
-    <div className="relative h-64">
+    <div className="relative ">
       <Image
         src={product.image}
         alt={product.name}
-        fill
-        className="object-cover"
+        width={500}
+        height={500}
+        // fill
+        className="max-w-full max-h-90 object-cover rounded "
       />
     </div>
     <div className="p-6">
@@ -42,9 +51,12 @@ const ProductCard = ({ product }: { product: Product }) => (
       <p className="text-gray-600 mb-4">{product.description}</p>
       <div className="flex justify-between items-center">
         <span className="text-sm text-gray-500">{product.category}</span>
-        <button className="bg-[#15274B] text-white px-4 py-2 rounded-lg hover:bg-blue-800 transition-colors duration-200">
+        <Link
+          href={`/products/${product.id}`}
+          className="bg-[#15274B] text-white px-4 py-2 rounded-lg hover:bg-blue-800 transition-colors duration-200"
+        >
           ดูรายละเอียด
-        </button>
+        </Link>
       </div>
     </div>
   </motion.div>
@@ -83,14 +95,225 @@ const ProductsPage = () => {
       name: "Carbon Black N330",
       description: "คาร์บอนแบล็คคุณภาพสูง สำหรับผลิตภัณฑ์ยางทั่วไป",
       category: "เคมีภัณฑ์ยาง",
-      image: "/products/carbon-black.jpg",
+      image: "/178363_0.jpg",
+      code: "CB-N330",
+      specifications: [
+        { label: "CAS Number", value: "1333-86-4" },
+        { label: "Appearance", value: "Black powder" },
+        { label: "Particle Size", value: "30-40 nm" },
+        { label: "Surface Area", value: "75-85 m²/g" },
+        { label: "Storage", value: "Store in a cool, dry place" },
+      ],
     },
     {
       id: 2,
       name: "Zinc Oxide",
       description: "ซิงค์ออกไซด์ สำหรับกระบวนการวัลคาไนซ์ยาง",
       category: "เคมีภัณฑ์ยาง",
-      image: "/products/zinc-oxide.jpg",
+      image: "/178364_0.jpg",
+      code: "ZnO",
+      specifications: [
+        { label: "CAS Number", value: "1317-11-7" },
+        { label: "Appearance", value: "White powder" },
+        { label: "Particle Size", value: "Average particle size varies" },
+        { label: "Surface Area", value: "Depends on particle size" },
+        { label: "Storage", value: "Store in a cool, dry place" },
+      ],
+    },
+    {
+      id: 3,
+      name: "Zinc Oxide",
+      description: "ซิงค์ออกไซด์ สำหรับกระบวนการวัลคาไนซ์ยาง",
+      category: "เคมีภัณฑ์ยาง",
+      image: "/178365_0.jpg",
+      code: "ZnO",
+      specifications: [
+        { label: "CAS Number", value: "1317-11-7" },
+        { label: "Appearance", value: "White powder" },
+        { label: "Particle Size", value: "Average particle size varies" },
+        { label: "Surface Area", value: "Depends on particle size" },
+        { label: "Storage", value: "Store in a cool, dry place" },
+      ],
+    },
+    {
+      id: 4,
+      name: "Zinc Oxide",
+      description: "ซิงค์ออกไซด์ สำหรับกระบวนการวัลคาไนซ์ยาง",
+      category: "เคมีภัณฑ์ยาง",
+      image: "/178366_0.jpg",
+      code: "ZnO",
+      specifications: [
+        { label: "CAS Number", value: "1317-11-7" },
+        { label: "Appearance", value: "White powder" },
+        { label: "Particle Size", value: "Average particle size varies" },
+        { label: "Surface Area", value: "Depends on particle size" },
+        { label: "Storage", value: "Store in a cool, dry place" },
+      ],
+    },
+    {
+      id: 5,
+      name: "Zinc Oxide",
+      description: "ซิงค์ออกไซด์ สำหรับกระบวนการวัลคาไนซ์ยาง",
+      category: "เคมีภัณฑ์ยาง",
+      image: "/178367_0.jpg",
+      code: "ZnO",
+      specifications: [
+        { label: "CAS Number", value: "1317-11-7" },
+        { label: "Appearance", value: "White powder" },
+        { label: "Particle Size", value: "Average particle size varies" },
+        { label: "Surface Area", value: "Depends on particle size" },
+        { label: "Storage", value: "Store in a cool, dry place" },
+      ],
+    },
+    {
+      id: 6,
+      name: "Zinc Oxide",
+      description: "ซิงค์ออกไซด์ สำหรับกระบวนการวัลคาไนซ์ยาง",
+      category: "เคมีภัณฑ์ยาง",
+      image: "/178368_0.jpg",
+      code: "ZnO",
+      specifications: [
+        { label: "CAS Number", value: "1317-11-7" },
+        { label: "Appearance", value: "White powder" },
+        { label: "Particle Size", value: "Average particle size varies" },
+        { label: "Surface Area", value: "Depends on particle size" },
+        { label: "Storage", value: "Store in a cool, dry place" },
+      ],
+    },
+    {
+      id: 7,
+      name: "Zinc Oxide",
+      description: "ซิงค์ออกไซด์ สำหรับกระบวนการวัลคาไนซ์ยาง",
+      category: "เคมีภัณฑ์ยาง",
+      image: "/178369_0.jpg",
+      code: "ZnO",
+      specifications: [
+        { label: "CAS Number", value: "1317-11-7" },
+        { label: "Appearance", value: "White powder" },
+        { label: "Particle Size", value: "Average particle size varies" },
+        { label: "Surface Area", value: "Depends on particle size" },
+        { label: "Storage", value: "Store in a cool, dry place" },
+      ],
+    },
+    {
+      id: 8,
+      name: "Zinc Oxide",
+      description: "ซิงค์ออกไซด์ สำหรับกระบวนการวัลคาไนซ์ยาง",
+      category: "เคมีภัณฑ์ยาง",
+      image: "/178370_0.jpg",
+      code: "ZnO",
+      specifications: [
+        { label: "CAS Number", value: "1317-11-7" },
+        { label: "Appearance", value: "White powder" },
+        { label: "Particle Size", value: "Average particle size varies" },
+        { label: "Surface Area", value: "Depends on particle size" },
+        { label: "Storage", value: "Store in a cool, dry place" },
+      ],
+    },
+    {
+      id: 9,
+      name: "Zinc Oxide",
+      description: "ซิงค์ออกไซด์ สำหรับกระบวนการวัลคาไนซ์ยาง",
+      category: "เคมีภัณฑ์ยาง",
+      image: "/178371_0.jpg",
+      code: "ZnO",
+      specifications: [
+        { label: "CAS Number", value: "1317-11-7" },
+        { label: "Appearance", value: "White powder" },
+        { label: "Particle Size", value: "Average particle size varies" },
+        { label: "Surface Area", value: "Depends on particle size" },
+        { label: "Storage", value: "Store in a cool, dry place" },
+      ],
+    },
+    {
+      id: 10,
+      name: "Zinc Oxide",
+      description: "ซิงค์ออกไซด์ สำหรับกระบวนการวัลคาไนซ์ยาง",
+      category: "เคมีภัณฑ์ยาง",
+      image: "/178372_0.jpg",
+      code: "ZnO",
+      specifications: [
+        { label: "CAS Number", value: "1317-11-7" },
+        { label: "Appearance", value: "White powder" },
+        { label: "Particle Size", value: "Average particle size varies" },
+        { label: "Surface Area", value: "Depends on particle size" },
+        { label: "Storage", value: "Store in a cool, dry place" },
+      ],
+    },
+    {
+      id: 11,
+      name: "Zinc Oxide",
+      description: "ซิงค์ออกไซด์ สำหรับกระบวนการวัลคาไนซ์ยาง",
+      category: "เคมีภัณฑ์ยาง",
+      image: "/178373_0.jpg",
+      code: "ZnO",
+      specifications: [
+        { label: "CAS Number", value: "1317-11-7" },
+        { label: "Appearance", value: "White powder" },
+        { label: "Particle Size", value: "Average particle size varies" },
+        { label: "Surface Area", value: "Depends on particle size" },
+        { label: "Storage", value: "Store in a cool, dry place" },
+      ],
+    },
+    {
+      id: 12,
+      name: "Zinc Oxide",
+      description: "ซิงค์ออกไซด์ สำหรับกระบวนการวัลคาไนซ์ยาง",
+      category: "เคมีภัณฑ์ยาง",
+      image: "/178374_0.jpg",
+      code: "ZnO",
+      specifications: [
+        { label: "CAS Number", value: "1317-11-7" },
+        { label: "Appearance", value: "White powder" },
+        { label: "Particle Size", value: "Average particle size varies" },
+        { label: "Surface Area", value: "Depends on particle size" },
+        { label: "Storage", value: "Store in a cool, dry place" },
+      ],
+    },
+    {
+      id: 13,
+      name: "Zinc Oxide",
+      description: "ซิงค์ออกไซด์ สำหรับกระบวนการวัลคาไนซ์ยาง",
+      category: "เคมีภัณฑ์ยาง",
+      image: "/178375_0.jpg",
+      code: "ZnO",
+      specifications: [
+        { label: "CAS Number", value: "1317-11-7" },
+        { label: "Appearance", value: "White powder" },
+        { label: "Particle Size", value: "Average particle size varies" },
+        { label: "Surface Area", value: "Depends on particle size" },
+        { label: "Storage", value: "Store in a cool, dry place" },
+      ],
+    },
+    {
+      id: 14,
+      name: "Zinc Oxide",
+      description: "ซิงค์ออกไซด์ สำหรับกระบวนการวัลคาไนซ์ยาง",
+      category: "เคมีภัณฑ์ยาง",
+      image: "/178376_0.jpg",
+      code: "ZnO",
+      specifications: [
+        { label: "CAS Number", value: "1317-11-7" },
+        { label: "Appearance", value: "White powder" },
+        { label: "Particle Size", value: "Average particle size varies" },
+        { label: "Surface Area", value: "Depends on particle size" },
+        { label: "Storage", value: "Store in a cool, dry place" },
+      ],
+    },
+    {
+      id: 15,
+      name: "Zinc Oxide",
+      description: "ซิงค์ออกไซด์ สำหรับกระบวนการวัลคาไนซ์ยาง",
+      category: "เคมีภัณฑ์ยาง",
+      image: "/178377_0.jpg",
+      code: "ZnO",
+      specifications: [
+        { label: "CAS Number", value: "1317-11-7" },
+        { label: "Appearance", value: "White powder" },
+        { label: "Particle Size", value: "Average particle size varies" },
+        { label: "Surface Area", value: "Depends on particle size" },
+        { label: "Storage", value: "Store in a cool, dry place" },
+      ],
     },
     // Add more products as needed
   ];

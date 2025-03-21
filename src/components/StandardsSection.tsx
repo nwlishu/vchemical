@@ -13,27 +13,67 @@ const StandardsSection: React.FC = () => {
             whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, bounce: 0.4 }}
-            className="relative h-[400px] lg:h-[600px]"
+            className="relative h-[500px] lg:h-[600px] rounded-2xl p-8 flex items-center justify-center"
           >
-            <Image
-              src="/Placeholder.png"
-              alt="ISO and GMP Standards"
-              fill
-              className="object-cover rounded-lg"
-            />
+            <div className="absolute inset-0  rounded-2xl" />
+            <div className="relative w-full h-full flex  items-center justify-center gap-4">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                className="relative w-48 h-48 bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition-shadow duration-300"
+              >
+                <Image
+                  src="/iso-Photoroom (1).png"
+                  alt="ISO Certification"
+                  fill
+                  className="object-contain p-4"
+                />
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                className="relative w-48 h-48 bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition-shadow duration-300"
+              >
+                <Image
+                  src="/GMP-Photoroom (1).png"
+                  alt="GMP Certification"
+                  fill
+                  className="object-contain p-4"
+                />
+              </motion.div>
+            </div>
           </motion.div>
+
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
+            className="space-y-8"
           >
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="mb-8"
+            >
+              <span className="text-[#15274B] text-sm font-semibold tracking-wider uppercase">
+                มาตรฐานของเรา
+              </span>
+              <div className="w-20 h-1 bg-[#15274B] mt-2" />
+            </motion.div>
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-3xl md:text-4xl font-bold text-[#15274B] mb-6"
+              className="text-3xl md:text-4xl font-bold text-[#15274B] leading-tight"
             >
               ความมุ่งมั่นของเราในการ ปฏิบัติตามมาตรฐาน ISO และ GMP
             </motion.h2>

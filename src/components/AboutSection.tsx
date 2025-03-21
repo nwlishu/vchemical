@@ -104,10 +104,10 @@ const AboutSection: React.FC = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="relative h-[300px] lg:h-[600px] rounded-2xl overflow-hidden shadow-2xl"
+            className="hidden md:block lg:block relative h-[300px] lg:h-[600px] rounded-2xl overflow-hidden shadow-md"
           >
             <Image
-              src="/aboutsection.jpg"
+              src="/about-1.png"
               alt="About V-Chemical"
               fill
               className="object-cover hover:scale-105 transition-transform duration-700"

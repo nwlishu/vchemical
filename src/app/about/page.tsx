@@ -32,9 +32,8 @@ const AboutPage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
               className="space-y-6"
             >
               <h2 className="text-3xl font-bold text-[#15274B]">
@@ -52,16 +51,15 @@ const AboutPage = () => {
             </motion.div>
             <motion.div
               initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
               className="relative h-[400px]"
             >
               <Image
                 src="/pexels-fabriciohollanda-27670224.jpg"
                 alt="Company Overview"
                 fill
-                className="object-cover rounded-lg"
+                className="object-cover rounded-lg shadow-lg"
               />
             </motion.div>
           </div>
@@ -73,9 +71,8 @@ const AboutPage = () => {
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
             className="text-center mb-16"
           >
             <h2 className="text-3xl font-bold text-[#15274B] mb-4">
@@ -111,12 +108,10 @@ const AboutPage = () => {
               <motion.div
                 key={value.title}
                 initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.8, delay: index * 0.2 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.8 + index * 0.2 }}
                 className="bg-white p-8 rounded-lg shadow-lg text-center"
               >
-                <div className="text-4xl mb-4">{value.icon}</div>
                 <h3 className="text-xl font-bold text-[#15274B] mb-4">
                   {value.title}
                 </h3>
@@ -132,9 +127,8 @@ const AboutPage = () => {
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 1.4 }}
             className="text-center max-w-3xl mx-auto"
           >
             <h2 className="text-3xl font-bold text-[#15274B] mb-8">

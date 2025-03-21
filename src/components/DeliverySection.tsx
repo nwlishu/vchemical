@@ -72,10 +72,10 @@ const DeliverySection: React.FC = () => {
             className="relative h-[400px] w-full"
           >
             <Image
-              src="/Placeholder.png"
+              src="/delivery.jpg"
               alt="Delivery Process"
               fill
-              className="object-cover rounded-lg"
+              className="object-cover rounded-lg shadow-lg"
             />
           </motion.div>
 
