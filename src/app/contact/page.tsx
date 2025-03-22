@@ -66,9 +66,9 @@ const ContactPage = () => {
                 <div className="space-y-2">
                   <h3 className="font-bold text-[#15274B]">Head Office</h3>
                   <p className="text-gray-600">
-                    65/1 ถนนสุขุมวิท64 แขวงบางจาก
+                    65/1 จรัญสนิทวงศ์44 แขวงบางยี่ขัน
                     <br />
-                    เขตพระโขนง กรุงเทพฯ 10260
+                    เขตบางพลัด กรุงเทพฯ 10700
                   </p>
                 </div>
 
@@ -82,11 +82,9 @@ const ContactPage = () => {
                 <div className="space-y-2">
                   <h3 className="font-bold text-[#15274B]">Call Us</h3>
                   <p className="text-gray-600">
-                    Phone: 02-3345549, 081-6552903,
+                    Phone: 02-435-5049, 081-855-2903, 080-963-0655
                     <br />
-                    080-9630655
-                    <br />
-                    Fax: 02-3834321
+                    Fax: 02-8834521
                   </p>
                 </div>
               </motion.div>
@@ -117,14 +115,14 @@ const ContactPage = () => {
             className="mt-12 h-[400px] md:h-[500px] rounded-lg overflow-hidden shadow-lg"
           >
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.0374741600243!2d100.6008013!3d13.7040946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29fdb959eae3f%3A0x4c0e1276cd8d0f8!2sV%20Chemical%20and%20Machinery%20Co.%2C%20Ltd.!5e0!3m2!1sen!2sth!4v1679900000000!5m2!1sen!2sth"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1055.4073789572844!2d100.48843033005097!3d13.776852046576325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e299b4a6a8e029%3A0x3475d004f6075329!2z4Lia4Lij4Li04Lip4Lix4LiXIOC4p-C4tSDguYDguITguKHguLTguITguK3guKUg4LmB4Lit4LiZ4LiU4LmMIOC5geC4oeC4iuC4tOC4meC5gOC4meC4reC4o-C4teC5iCDguIjguLPguIHguLHguJQ!5e0!3m2!1sen!2sth!4v1742611168847!5m2!1sen!2sth"
               width="100%"
               height="100%"
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-            />
+            ></iframe>
           </motion.div>
         </div>
       </section>
