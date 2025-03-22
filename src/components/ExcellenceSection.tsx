@@ -31,9 +31,6 @@ const ExcellenceSection: React.FC = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            <span className="text-sm font-medium text-[#15274B] mb-2 block">
-              Excellence
-            </span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#15274B] mb-6">
               ความมุ่งมั่นของเราต่อคุณภาพ และความน่าเชื่อถือ
             </h2>
