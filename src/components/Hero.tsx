@@ -45,7 +45,7 @@ const Hero: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
-            className="text-4xl md:text-6xl font-bold text-white mb-6"
+            className="text-2xl lg:text-6xl font-bold text-white mb-6"
           >
             บริษัท วี เคมิคอล แอนด์ แมชินเนอรี่ จำกัด
           </motion.h1>
@@ -53,7 +53,7 @@ const Hero: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1 }}
-            className="text-xl md:text-2xl text-white mb-8"
+            className="text-base lg:text-2xl text-white mb-8 "
           >
             ที่บริษัท วี เคมิคอล แอนด์ แมชินเนอรี่ จำกัด
             เรามุ่งมั่นที่จะจัดหาสารเคมีและ
@@ -67,9 +67,11 @@ const Hero: React.FC = () => {
             transition={{ duration: 0.8, delay: 1.2 }}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="bg-[#ffff]  text-[#000] font-semibold py-3 px-8 rounded-full transition-colors duration-200"
+            className="bg-[#ffff]  text-[#000] font-semibold py-2 px-4 md:py-3 md:px-8 rounded-full transition-colors duration-200"
           >
-            <Link   href="/about">เกี่ยวกับเรา</Link>
+            <Link href="/about" className="text-base ">
+              เกี่ยวกับเรา
+            </Link>
           </motion.button>
         </motion.div>
       </div>

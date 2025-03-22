@@ -20,13 +20,17 @@ const FeatureCard = ({
     className={className}
   >
     <h3 className="text-xl font-bold text-[#15274B] mb-2">{title}</h3>
-    <p className="text-gray-600">{description}</p>
+
+    <p className="text-gray-600">
+      <span className="md:hidden">- </span>
+      {description}
+    </p>
   </motion.div>
 );
 
 const DeliverySection: React.FC = () => {
   return (
-    <section className="py-20 bg-white md:h-[100vh] md:flex md:items-center">
+    <section className="py-20 bg-white lg:h-[100vh] md:flex md:items-center">
       <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16">
         {/* Header */}
         <motion.div
@@ -54,12 +58,12 @@ const DeliverySection: React.FC = () => {
             <FeatureCard
               title="การจัดส่งที่รวดเร็ว"
               description="เรามุ่งมั่นในการเพิ่มประสิทธิภาพเพื่อให้แน่ใจว่าผลิตภัณฑ์ของคุณจะถูกจัดส่งโดยไม่ล่าช้า"
-              className="text-right"
+              className="lg:text-right"
             />
             <FeatureCard
               title="การจัดส่งที่น่าเชื่อถือ"
               description="ใช้วางใจกับงานของเราในการจัดส่งคำสั่งซื้อของคุณอย่างตรงเวลาและถูกต้องทุกครั้ง"
-              className="text-right"
+              className="lg:text-right"
             />
           </div>
 
@@ -69,13 +73,13 @@ const DeliverySection: React.FC = () => {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="relative h-[400px] w-full"
+            className="hidden lg:block relative h-[400px] w-full"
           >
             <Image
               src="/delivery.jpg"
               alt="Delivery Process"
               fill
-              className="object-cover rounded-lg shadow-lg"
+              className="object-cover  shadow-lg rounded-tl-2xl rounded-br-2xl"
             />
           </motion.div>
 

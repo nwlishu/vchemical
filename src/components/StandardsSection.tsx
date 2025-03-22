@@ -5,15 +5,15 @@ import { motion } from "framer-motion";
 
 const StandardsSection: React.FC = () => {
   return (
-    <section className="py-20 bg-white md:h-[80vh] lg:h-[80vh] md:flex md:items-center">
+    <section className="md:py-20 bg-white lg:h-[80vh] md:flex md:items-center">
       <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center md:h-full">
+        <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 lg:gap-12 items-center lg:h-full">
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, bounce: 0.4 }}
-            className="relative h-[500px] lg:h-[600px] rounded-2xl p-8 flex items-center justify-center"
+            className="relative md:h-[300px] lg:h-[600px] rounded-2xl p-8 flex items-center justify-center"
           >
             <div className="absolute inset-0  rounded-2xl" />
             <div className="relative w-full h-full flex  items-center justify-center gap-4">
@@ -22,7 +22,7 @@ const StandardsSection: React.FC = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: 0.2 }}
-                className="relative w-48 h-48 bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition-shadow duration-300"
+                className="relative w-36 h-36 md:w-48 md:h-48 bg-white rounded-xl shadow-md md:p-6 hover:shadow-xl transition-shadow duration-300"
               >
                 <Image
                   src="/iso-Photoroom (1).png"
@@ -37,13 +37,13 @@ const StandardsSection: React.FC = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: 0.4 }}
-                className="relative w-48 h-48 bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition-shadow duration-300"
+                className="relative w-36 h-36 md:w-48 md:h-48 bg-white rounded-xl shadow-md md:p-6 hover:shadow-xl transition-shadow duration-300"
               >
                 <Image
                   src="/GMP-Photoroom (1).png"
                   alt="GMP Certification"
                   fill
-                  className="object-contain p-4"
+                  className="object-contain "
                 />
               </motion.div>
             </div>

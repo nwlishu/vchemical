@@ -44,23 +44,27 @@ const ProductCard = ({
       whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay }}
-      className="bg-white flex gap-8 p-6 rounded-xl shadow-md hover:shadow-md transition-shadow duration-300"
+      className=" flex flex-col md:flex-row  md:gap-3 lg:gap-6 p-6  duration-300"
     >
-      <div className="relative w-48 h-48 flex-shrink-0">
+      <div className=" h-auto lg:w-52 lg:h-auto flex-shrink-0 rounded-lg overflow-hidden">
         <Image
           src={imageUrl}
           alt={name}
-          fill
-          className="object-cover rounded-lg"
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          width={208} // 52 * 4 (Tailwind rem conversion)
+          height={208}
+          className="object-cover rounded-lg "
         />
       </div>
-      <div className="space-y-4 flex-grow">
-        <h3 className="font-bold text-[#15274B] text-lg">{name}</h3>
-        <p className="text-gray-600 text-base leading-relaxed">{code}</p>
+      <div className="space-y-1.5 flex-grow">
+        <h3 className="font-bold text-[#15274B] text-sm md:text-base lg:text-lg">
+          {name}
+        </h3>
+        <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+          {code}
+        </p>
         <Link
           href="#"
-          className="inline-flex items-center text-[#15274B] hover:text-blue-700 font-medium"
+          className="inline-flex items-center text-sm md:text-base text-[#15274B] hover:text-blue-700 font-medium"
         >
           เพิ่มเติม
           <svg
@@ -117,6 +121,18 @@ const ProductCatalog: React.FC = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="mb-8"
+            >
+              <span className="text-[#15274B] text-sm font-semibold tracking-wider uppercase">
+                สินค้าของเรา
+              </span>
+              <div className="w-20 h-1 bg-[#15274B] mt-2" />
+            </motion.div>
             <h2 className="text-3xl md:text-4xl font-bold text-[#15274B] mb-6">
               ผลิตภัณฑ์สารเคมีและเครื่องจักรคุณภาพสูงหลากหลายประเภทของเรา
             </h2>
@@ -150,7 +166,7 @@ const ProductCatalog: React.FC = () => {
         </div>
 
         {/* Product Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 ">
           {products.map((product, index) => (
             <ProductCard key={index} {...product} delay={0.4} />
           ))}

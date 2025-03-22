@@ -43,7 +43,7 @@ const ProductCard = ({ product }: { product: Product }) => (
         width={500}
         height={500}
         // fill
-        className="max-w-full max-h-90 object-cover rounded "
+        className="max-w-full h-124 object-cover rounded "
       />
     </div>
     <div className="p-6">

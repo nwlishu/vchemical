@@ -53,7 +53,7 @@ const BusinessPartnerSection: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="relative w-full mt-16"
+            className="relative w-full lg:mt-16"
           >
             ที่บริษัท วี เคมิคอล แอนด์ แมชินเนอรี่ จำกัด
             <br />

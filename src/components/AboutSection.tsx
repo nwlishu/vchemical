@@ -10,7 +10,7 @@ const AboutSection: React.FC = () => {
       <div className="absolute inset-0 bg-[url('/grid-pattern.png')] opacity-[0.02]" />
 
       <div className=" max-w-7xl mx-auto px-4 md:px-8 lg:px-16 relative">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="flex flex-col lg:grid md:grid lg:grid-cols-2 gap-16 items-center">
           {/* Left Content */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -32,13 +32,22 @@ const AboutSection: React.FC = () => {
               </span>
               <div className="h-1 w-20 bg-[#15274B]" />
             </motion.div>
+            <div className="lg:hidden flex justify-center">
+              <Image
+                src="/about-1.png"
+                alt="เกี่ยวกับเรา"
+                width={300} // Set a fixed width
+                height={200} // Set a fixed height
+                className="w-full h-60 rounded-tl-2xl rounded-br-2xl object-cover shadow-xl"
+              />
+            </div>
 
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-3xl md:text-4xl font-bold text-[#15274B] leading-tight"
+              className="text-2xl md:text-4xl font-bold text-[#15274B] leading-tight"
             >
               สัมผัสความมุ่งมั่นของเราในการ
               <br />
@@ -50,7 +59,7 @@ const AboutSection: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="text-gray-700 text-lg leading-relaxed"
+              className="text-gray-700 text-base md:text-lg leading-relaxed "
             >
               บริษัท วี เคมิคอล แอนด์ แมชินเนอรี่ จำกัด
               เชี่ยวชาญในการนำเข้าและจัดจำหน่าย เคมีภัณฑ์คุณภาพสูง
@@ -75,7 +84,7 @@ const AboutSection: React.FC = () => {
                 <h3 className="text-xl font-bold text-[#15274B] mb-4">
                   การรับประกันคุณภาพ
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-gray-700 text-base">
                   เราให้ความสำคัญในการปฏิบัติตามมาตรฐาน ISO และ GMP
                   สำหรับทุกผลิตภัณฑ์ที่ของเรา
                 </p>
@@ -90,7 +99,7 @@ const AboutSection: React.FC = () => {
                 <h3 className="text-xl font-bold text-[#15274B] mb-4">
                   ประสิทธิภาพด้านต้นทุน
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-gray-700 text-base">
                   ในฐานะผู้นำเข้าโดยตรง
                   เรามีการกำหนดราคาที่แข่งขันได้เพื่อสนับสนุนการเติบโตของธุรกิจของคุณ
                 </p>
@@ -104,13 +113,13 @@ const AboutSection: React.FC = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="hidden md:block lg:block relative h-[300px] lg:h-[600px] rounded-2xl overflow-hidden shadow-md"
+            className="hidden lg:block relative h-[300px] lg:h-[600px]  overflow-hidden "
           >
             <Image
               src="/about-1.png"
               alt="About V-Chemical"
               fill
-              className="object-cover hover:scale-105 transition-transform duration-700"
+              className="object-cover  transition-transform rounded-tl-2xl rounded-br-2xl duration-700 shadow-md"
             />
           </motion.div>
         </div>
