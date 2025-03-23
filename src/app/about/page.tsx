@@ -9,7 +9,7 @@ const AboutPage = () => {
       {/* Hero Section */}
       <section className="relative h-[400px] bg-[#15274B]">
         <div className="absolute inset-0 bg-black/50" />
-        <div className="relative z-10 h-full flex items-center justify-center">
+        <div className="relative z-10 h-full flex items-center justify-center mt-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

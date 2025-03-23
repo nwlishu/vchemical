@@ -8,15 +8,8 @@ const ContactPage = () => {
     <main className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="relative h-[300px] bg-[#15274B]">
-        <div className="absolute inset-0 bg-black/50" />
-        {/* <Image
-          src="/contact-hero.jpg"
-          alt="Contact Us"
-          fill
-          className="object-cover"
-          priority
-        /> */}
-        <div className="relative z-10 h-full flex items-center justify-center">
+        <div className="absolute inset-0 bg-black/50 " />
+        <div className="relative z-10 h-full flex items-center justify-center mt-12">
           <motion.div className="text-center">
             <motion.h1
               initial={{ opacity: 0, y: 20 }}

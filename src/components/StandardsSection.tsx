@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const StandardsSection: React.FC = () => {
   return (
-    <section className="md:py-20 bg-white lg:h-[80vh] md:flex md:items-center">
+    <section className="md:py-20 bg-gray-50 lg:h-[80vh] md:flex md:items-center">
       <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16">
         <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 lg:gap-12 items-center lg:h-full">
           <motion.div

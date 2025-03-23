@@ -7,7 +7,7 @@ const AboutSection: React.FC = () => {
   return (
     <section className="py-24 bg-white md:min-h-screen flex items-center relative">
       {/* Background pattern */}
-      <div className="absolute inset-0 bg-[url('/grid-pattern.png')] opacity-[0.02]" />
+      <div className="absolute inset-0  opacity-[0.02]" />
 
       <div className=" max-w-7xl mx-auto px-4 md:px-8 lg:px-16 relative">
         <div className="flex flex-col lg:grid md:grid lg:grid-cols-2 gap-16 items-center">

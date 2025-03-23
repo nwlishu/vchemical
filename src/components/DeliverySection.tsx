@@ -30,7 +30,7 @@ const FeatureCard = ({
 
 const DeliverySection: React.FC = () => {
   return (
-    <section className="py-20 bg-white lg:h-[100vh] md:flex md:items-center">
+    <section className="py-20 bg-gray-50 lg:h-[100vh] md:flex md:items-center">
       <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16">
         {/* Header */}
         <motion.div

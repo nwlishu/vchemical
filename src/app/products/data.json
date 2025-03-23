@@ -1,0 +1,201 @@
+[
+    {
+      "id": 1,
+      "name": "Latex Accelerator (กำว HOT AIR CURE)",
+      "description": "คาร์บอนแบล็คคุณภาพสูง สำหรับผลิตภัณฑ์ยางทั่วไป",
+      "category": "เคมีภัณฑ์ยาง",
+      "image": "/178363_0.jpg",
+      "code": "SK 3000",
+      "specifications": [
+        { "label": "Origin", "value": "Korea" },
+        { "label": "Packing", "value": "110 KG" },
+        {
+          "label": "Description",
+          "value": "ลักษณะทางกายภาพ Milky liquid <br/>Acceleratorน้ำ ใช้กับLatex"
+        },
+        { "label": "Surface Area", "value": "75-85 m²/g" }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Tokusil 233",
+      "description": "สารป้องกันการจับตัวเป็นก้อน(Anticaking) เป็นสารนำพาและช่วยในการแพร่กระจายสารเคมี ป้องกันการเกาะตัวเป็นก้อนจากความชื้น เป็นตัวช่วยการไหลเวียนในอุตสาหกรรมต่างๆ",
+      "category": "เคมีภัณฑ์ยาง",
+      "image": "/178364_0.jpg",
+      "code": "TOKUSIL",
+      "specifications": [
+        { "label": "Origin", "value": "Thailand" },
+        { "label": "Packing", "value": "20 KG" }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Zinc Oxide",
+      "description": "ซิงค์ออกไซด์ สำหรับกระบวนการวัลคาไนซ์ยาง",
+      "category": "เคมีภัณฑ์ยาง",
+      "image": "/178365_0.jpg",
+      "code": "ZnO",
+      "specifications": [
+        { "label": "Origin", "value": "1317-11-7" },
+        { "label": "Packing", "value": "White powder" },
+        { "label": "Description", "value": "Average Description varies" }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Zinc Oxide",
+      "description": "ซิงค์ออกไซด์ สำหรับกระบวนการวัลคาไนซ์ยาง",
+      "category": "เคมีภัณฑ์ยาง",
+      "image": "/178366_0.jpg",
+      "code": "ZnO",
+      "specifications": [
+        { "label": "Origin", "value": "1317-11-7" },
+        { "label": "Packing", "value": "White powder" },
+        { "label": "Description", "value": "Average Description varies" }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Zinc Oxide",
+      "description": "ซิงค์ออกไซด์ สำหรับกระบวนการวัลคาไนซ์ยาง",
+      "category": "เคมีภัณฑ์ยาง",
+      "image": "/178367_0.jpg",
+      "code": "ZnO",
+      "specifications": [
+        { "label": "Origin", "value": "1317-11-7" },
+        { "label": "Packing", "value": "White powder" },
+        { "label": "Description", "value": "Average Description varies" }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "น้ำสบู่",
+      "description": "ซิงค์ออกไซด์ สำหรับกระบวนการวัลคาไนซ์ยาง",
+      "category": "เคมีภัณฑ์ยาง",
+      "image": "/178368_0.jpg",
+      "code": "-",
+      "specifications": [
+        { "label": "Origin", "value": "Thailand" },
+        { "label": "Packing", "value": "30 KG" },
+        { "label": "Description", "value": "-" }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Zinc Oxide",
+      "description": "ซิงค์ออกไซด์ สำหรับกระบวนการวัลคาไนซ์ยาง",
+      "category": "เคมีภัณฑ์ยาง",
+      "image": "/178369_0.jpg",
+      "code": "ZnO",
+      "specifications": [
+        { "label": "Origin", "value": "Thailand" },
+        { "label": "Packing", "value": "White powder" },
+        { "label": "Description", "value": "Average Description varies" }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Zinc Oxide",
+      "description": "ซิงค์ออกไซด์ สำหรับกระบวนการวัลคาไนซ์ยาง",
+      "category": "เคมีภัณฑ์ยาง",
+      "image": "/178370_0.jpg",
+      "code": "ZnO",
+      "specifications": [
+        { "label": "Origin", "value": "1317-11-7" },
+        { "label": "Packing", "value": "White powder" },
+        { "label": "Description", "value": "Average Description varies" }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Zinc Oxide",
+      "description": "ซิงค์ออกไซด์ สำหรับกระบวนการวัลคาไนซ์ยาง",
+      "category": "เคมีภัณฑ์ยาง",
+      "image": "/178371_0.jpg",
+      "code": "ZnO",
+      "specifications": [
+        { "label": "Origin", "value": "1317-11-7" },
+        { "label": "Packing", "value": "White powder" },
+        { "label": "Description", "value": "Average Description varies" }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Zinc Oxide",
+      "description": "ซิงค์ออกไซด์ สำหรับกระบวนการวัลคาไนซ์ยาง",
+      "category": "เคมีภัณฑ์ยาง",
+      "image": "/178372_0.jpg",
+      "code": "ZnO",
+      "specifications": [
+        { "label": "Origin", "value": "1317-11-7" },
+        { "label": "Packing", "value": "White powder" },
+        { "label": "Description", "value": "Average Description varies" }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Zinc Oxide",
+      "description": "ซิงค์ออกไซด์ สำหรับกระบวนการวัลคาไนซ์ยาง",
+      "category": "เคมีภัณฑ์ยาง",
+      "image": "/178373_0.jpg",
+      "code": "ZnO",
+      "specifications": [
+        { "label": "Origin", "value": "1317-11-7" },
+        { "label": "Packing", "value": "White powder" },
+        { "label": "Description", "value": "Average Description varies" }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Zinc Oxide",
+      "description": "ซิงค์ออกไซด์ สำหรับกระบวนการวัลคาไนซ์ยาง",
+      "category": "เคมีภัณฑ์ยาง",
+      "image": "/178374_0.jpg",
+      "code": "ZnO",
+      "specifications": [
+        { "label": "Origin", "value": "1317-11-7" },
+        { "label": "Packing", "value": "White powder" },
+        { "label": "Description", "value": "Average Description varies" }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Zinc Oxide",
+      "description": "ซิงค์ออกไซด์ สำหรับกระบวนการวัลคาไนซ์ยาง",
+      "category": "เคมีภัณฑ์ยาง",
+      "image": "/178375_0.jpg",
+      "code": "ZnO",
+      "specifications": [
+        { "label": "Origin", "value": "1317-11-7" },
+        { "label": "Packing", "value": "White powder" },
+        { "label": "Description", "value": "Average Description varies" }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Zinc Oxide",
+      "description": "ซิงค์ออกไซด์ สำหรับกระบวนการวัลคาไนซ์ยาง",
+      "category": "เคมีภัณฑ์ยาง",
+      "image": "/178376_0.jpg",
+      "code": "ZnO",
+      "specifications": [
+        { "label": "Origin", "value": "1317-11-7" },
+        { "label": "Packing", "value": "White powder" },
+        { "label": "Description", "value": "Average Description varies" }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Zinc Oxide",
+      "description": "ซิงค์ออกไซด์ สำหรับกระบวนการวัลคาไนซ์ยาง",
+      "category": "เคมีภัณฑ์ยาง",
+      "image": "/178377_0.jpg",
+      "code": "ZnO",
+      "specifications": [
+        { "label": "Origin", "value": "1317-11-7" },
+        { "label": "Packing", "value": "White powder" },
+        { "label": "Description", "value": "Average Description varies" }
+      ]
+    }
+  ]
+  
