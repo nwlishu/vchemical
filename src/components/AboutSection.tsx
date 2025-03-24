@@ -78,7 +78,7 @@ const AboutSection: React.FC = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.8, delay: 0.8 }}
+                transition={{ duration: 0.8, delay: 0.6 }}
                 className="bg-gray-50 p-6 rounded-xl hover:shadow-lg transition-shadow duration-300"
               >
                 <h3 className="text-xl font-bold text-[#15274B] mb-4">
@@ -93,7 +93,7 @@ const AboutSection: React.FC = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.8, delay: 0.8 }}
+                transition={{ duration: 0.8, delay: 0.6 }}
                 className="bg-gray-50 p-6 rounded-xl hover:shadow-lg transition-shadow duration-300"
               >
                 <h3 className="text-xl font-bold text-[#15274B] mb-4">

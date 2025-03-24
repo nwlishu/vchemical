@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
 
             <div className="md:flex md:gap-36">
               {/* Quick Links */}
-              <div className="md:col-span-1">
+              <div className="md:col-span-1 mb-3 lg:mb-0">
                 <h3 className="text-base font-semibold mb-3">Quick Links</h3>
                 <ul className="space-y-2">
                   <li>
@@ -90,7 +90,7 @@ const Footer: React.FC = () => {
               © 2025 V CHEMICAL AND MACHINERY CO., LTD. All rights reserved.
             </p>
             <div className="flex gap-4 mt-2 md:mt-0">
-              <Link
+              {/* <Link
                 href="/privacy-policy"
                 className="text-gray-300 hover:text-white"
               >
@@ -107,7 +107,7 @@ const Footer: React.FC = () => {
                 className="text-gray-300 hover:text-white"
               >
                 Cookie Settings
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>

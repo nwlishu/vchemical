@@ -58,7 +58,7 @@ const ProductCard = ({
         />
       </div>
       <div className="space-y-1.5 flex-grow">
-        <h3 className="font-bold text-[#15274B] text-sm md:text-base lg:text-lg">
+        <h3 className="font-bold text-[#15274B] text-sm md:text-base lg:text-lg mt-2 lg:mt-0">
           {name}
         </h3>
         <p className="text-gray-600 text-sm md:text-base leading-relaxed">
