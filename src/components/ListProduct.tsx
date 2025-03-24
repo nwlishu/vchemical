@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -11,29 +11,52 @@ interface Product {
   category: string;
   image: string;
   code: string;
-    specifications: {
-      label: string;
-      value: string;
-    }[];
+  detail?: string;
+  specifications: {
+    label: string;
+    value: string;
+  }[];
 }
 
 const ListProduct: React.FC<Product> = ({
   id,
   name,
-    description,
-    specifications,
-  //   category,
+  description,
+  specifications,
+  detail,
   image,
-    code,
+  code,
 }) => {
-  const [position, setPosition] = useState({ x: 50, y: 50 });
+  const [position, setPosition] = useState<{ x: number; y: number } | null>(
+    null
+  );
+  const [hasEntered, setHasEntered] = useState(false);
+
+  // Reset states when product changes
+  useEffect(() => {
+    setPosition(null);
+    setHasEntered(false);
+  }, [id]); // Reset when product ID changes
+
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (!hasEntered) return;
     const { left, top, width, height } =
       e.currentTarget.getBoundingClientRect();
     const x = ((e.clientX - left) / width) * 100;
     const y = ((e.clientY - top) / height) * 100;
     setPosition({ x, y });
   };
+
+  const handleMouseEnter = () => {
+    if (hasEntered) return; // Don't do anything if we've already entered before
+    setPosition(null); // Reset zoom position
+  };
+
+  const handleMouseLeave = () => {
+    setHasEntered(true); // Now allow zooming for subsequent hovers
+    setPosition(null); // Reset zoom position when leaving
+  };
+
   if (!id) {
     return (
       <div className="min-h-screen flex items-center justify-center">
@@ -66,7 +89,7 @@ const ListProduct: React.FC<Product> = ({
             <h1 className="text-3xl font-bold">ชื่อสินค้า : {name}</h1>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 p-8">
               <div
-                className="relative aspect-square overflow-hidden rounded-lg group"
+                className="relative aspect-square overflow-hidden  group"
                 onMouseMove={handleMouseMove}
               >
                 <Image
@@ -75,8 +98,13 @@ const ListProduct: React.FC<Product> = ({
                   fill
                   className="object-contain transition-transform duration-300 group-hover:scale-150"
                   style={{
-                    transformOrigin: `${position.x}% ${position.y}%`,
+                    transformOrigin: position
+                      ? `${position.x}% ${position.y}%`
+                      : "center",
                   }}
+                  onMouseMove={handleMouseMove}
+                  onMouseEnter={handleMouseEnter}
+                  onMouseLeave={handleMouseLeave}
                 />
               </div>
 
@@ -105,16 +133,29 @@ const ListProduct: React.FC<Product> = ({
                         <span className="text-gray-600 font-medium">
                           {spec.label}
                         </span>
-                        <span className="text-gray-900">{spec.value}</span>
+                        <div
+                          className="text-gray-900"
+                          dangerouslySetInnerHTML={{ __html: spec.value }}
+                        />
                       </div>
                     ))}
+                  </div>
+                  <div className="py-4 text-gray-600 font-medium ">
+                    <p className="py-2">Deatil</p>
+                    <div
+                      className="text-gray-900"
+                      dangerouslySetInnerHTML={{ __html: detail ? detail : "" }}
+                    />
                   </div>
                 </div>
 
                 <div className="pt-4">
-                  <button className="w-full bg-[#15274B] text-white py-3 px-6 rounded-lg hover:bg-[#1e3a6d] transition-colors duration-300">
+                  <Link
+                    href="/contact"
+                    className="w-full bg-[#15274B] text-white py-3 px-6 rounded-lg hover:bg-[#1e3a6d] transition-colors duration-300"
+                  >
                     ติดต่อสอบถาม
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -126,5 +167,3 @@ const ListProduct: React.FC<Product> = ({
 };
 
 export default ListProduct;
-
-

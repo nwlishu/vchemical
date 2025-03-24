@@ -28,11 +28,13 @@ const InfoCard = ({
 };
 
 const ProductCard = ({
+  id,
   code,
   name,
   imageUrl,
   delay = 0,
 }: {
+  id: number;
   code: string;
   name: string;
   imageUrl: string;
@@ -50,7 +52,7 @@ const ProductCard = ({
         <Image
           src={imageUrl}
           alt={name}
-          width={208} // 52 * 4 (Tailwind rem conversion)
+          width={208}
           height={208}
           className="object-cover rounded-lg "
         />
@@ -63,7 +65,7 @@ const ProductCard = ({
           {code}
         </p>
         <Link
-          href="#"
+          href={`/products/${id}`}
           className="inline-flex items-center text-sm md:text-base text-[#15274B] hover:text-blue-700 font-medium"
         >
           เพิ่มเติม
@@ -89,23 +91,27 @@ const ProductCard = ({
 const ProductCatalog: React.FC = () => {
   const products = [
     {
-      code: "SK 3000",
-      name: "Latex Accelerator (กาว HOT AIR CURE)",
+      id: 1,
+      code: "Latex Accelerator (กาว HOT AIR CURE)",
+      name: "SK 3000",
       imageUrl: "/178363_0.jpg",
     },
     {
+      id: 14,
       code: "PAZ 57",
       name: "Tackifier and Homogenizing Agen",
       imageUrl: "/178376_0.jpg",
     },
     {
-      code: "TOKUSIL",
-      name: "Silicon dioxide",
+      id: 4,
+      code: "Silicon dioxide",
+      name: "Tokusil 255  Packing 25Kg",
       imageUrl: "/178366_0.jpg",
     },
     {
-      code: "TOKUSIL",
-      name: "Silicon dioxide",
+      id: 5,
+      code: "Silicon dioxide",
+      name: "Tokusil HOA Packing 20Kg",
       imageUrl: "/178367_0.jpg",
     },
   ];
@@ -113,7 +119,6 @@ const ProductCatalog: React.FC = () => {
   return (
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16">
-        {/* Header */}
         <div className="mb-16 flex flex-col md:flex-row md:gap-24">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -149,7 +154,6 @@ const ProductCatalog: React.FC = () => {
               ความมุ่งมั่นของเราในด้านคุณภาพและความพึงพอใจของลูกค้าคือสิ่งที่ทำให้เราเติบโตในตลาดเสมอมา
             </p>
 
-            {/* Info Cards */}
             <div className="grid md:grid-cols-2 gap-8 mb-4 ">
               <InfoCard
                 title="สารเคมีและเครื่องจักร"
@@ -165,19 +169,17 @@ const ProductCatalog: React.FC = () => {
           </motion.div>
         </div>
 
-        {/* Product Grid */}
         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 ">
           {products.map((product, index) => (
             <ProductCard key={index} {...product} delay={0.4} />
           ))}
         </div>
 
-        {/* View All Button */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.4 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
           className="text-center mt-12 flex justify-end"
         >
           <button className="bg-[#15274B] text-white px-8 py-3 rounded-full hover:bg-blue-900 transition-colors">

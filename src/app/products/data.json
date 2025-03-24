@@ -1,201 +1,290 @@
 [
-    {
-      "id": 1,
-      "name": "Latex Accelerator (กำว HOT AIR CURE)",
-      "description": "คาร์บอนแบล็คคุณภาพสูง สำหรับผลิตภัณฑ์ยางทั่วไป",
-      "category": "เคมีภัณฑ์ยาง",
-      "image": "/178363_0.jpg",
-      "code": "SK 3000",
-      "specifications": [
-        { "label": "Origin", "value": "Korea" },
-        { "label": "Packing", "value": "110 KG" },
-        {
-          "label": "Description",
-          "value": "ลักษณะทางกายภาพ Milky liquid <br/>Acceleratorน้ำ ใช้กับLatex"
-        },
-        { "label": "Surface Area", "value": "75-85 m²/g" }
-      ]
-    },
-    {
-      "id": 2,
-      "name": "Tokusil 233",
-      "description": "สารป้องกันการจับตัวเป็นก้อน(Anticaking) เป็นสารนำพาและช่วยในการแพร่กระจายสารเคมี ป้องกันการเกาะตัวเป็นก้อนจากความชื้น เป็นตัวช่วยการไหลเวียนในอุตสาหกรรมต่างๆ",
-      "category": "เคมีภัณฑ์ยาง",
-      "image": "/178364_0.jpg",
-      "code": "TOKUSIL",
-      "specifications": [
-        { "label": "Origin", "value": "Thailand" },
-        { "label": "Packing", "value": "20 KG" }
-      ]
-    },
-    {
-      "id": 3,
-      "name": "Zinc Oxide",
-      "description": "ซิงค์ออกไซด์ สำหรับกระบวนการวัลคาไนซ์ยาง",
-      "category": "เคมีภัณฑ์ยาง",
-      "image": "/178365_0.jpg",
-      "code": "ZnO",
-      "specifications": [
-        { "label": "Origin", "value": "1317-11-7" },
-        { "label": "Packing", "value": "White powder" },
-        { "label": "Description", "value": "Average Description varies" }
-      ]
-    },
-    {
-      "id": 4,
-      "name": "Zinc Oxide",
-      "description": "ซิงค์ออกไซด์ สำหรับกระบวนการวัลคาไนซ์ยาง",
-      "category": "เคมีภัณฑ์ยาง",
-      "image": "/178366_0.jpg",
-      "code": "ZnO",
-      "specifications": [
-        { "label": "Origin", "value": "1317-11-7" },
-        { "label": "Packing", "value": "White powder" },
-        { "label": "Description", "value": "Average Description varies" }
-      ]
-    },
-    {
-      "id": 5,
-      "name": "Zinc Oxide",
-      "description": "ซิงค์ออกไซด์ สำหรับกระบวนการวัลคาไนซ์ยาง",
-      "category": "เคมีภัณฑ์ยาง",
-      "image": "/178367_0.jpg",
-      "code": "ZnO",
-      "specifications": [
-        { "label": "Origin", "value": "1317-11-7" },
-        { "label": "Packing", "value": "White powder" },
-        { "label": "Description", "value": "Average Description varies" }
-      ]
-    },
-    {
-      "id": 6,
-      "name": "น้ำสบู่",
-      "description": "ซิงค์ออกไซด์ สำหรับกระบวนการวัลคาไนซ์ยาง",
-      "category": "เคมีภัณฑ์ยาง",
-      "image": "/178368_0.jpg",
-      "code": "-",
-      "specifications": [
-        { "label": "Origin", "value": "Thailand" },
-        { "label": "Packing", "value": "30 KG" },
-        { "label": "Description", "value": "-" }
-      ]
-    },
-    {
-      "id": 7,
-      "name": "Zinc Oxide",
-      "description": "ซิงค์ออกไซด์ สำหรับกระบวนการวัลคาไนซ์ยาง",
-      "category": "เคมีภัณฑ์ยาง",
-      "image": "/178369_0.jpg",
-      "code": "ZnO",
-      "specifications": [
-        { "label": "Origin", "value": "Thailand" },
-        { "label": "Packing", "value": "White powder" },
-        { "label": "Description", "value": "Average Description varies" }
-      ]
-    },
-    {
-      "id": 8,
-      "name": "Zinc Oxide",
-      "description": "ซิงค์ออกไซด์ สำหรับกระบวนการวัลคาไนซ์ยาง",
-      "category": "เคมีภัณฑ์ยาง",
-      "image": "/178370_0.jpg",
-      "code": "ZnO",
-      "specifications": [
-        { "label": "Origin", "value": "1317-11-7" },
-        { "label": "Packing", "value": "White powder" },
-        { "label": "Description", "value": "Average Description varies" }
-      ]
-    },
-    {
-      "id": 9,
-      "name": "Zinc Oxide",
-      "description": "ซิงค์ออกไซด์ สำหรับกระบวนการวัลคาไนซ์ยาง",
-      "category": "เคมีภัณฑ์ยาง",
-      "image": "/178371_0.jpg",
-      "code": "ZnO",
-      "specifications": [
-        { "label": "Origin", "value": "1317-11-7" },
-        { "label": "Packing", "value": "White powder" },
-        { "label": "Description", "value": "Average Description varies" }
-      ]
-    },
-    {
-      "id": 10,
-      "name": "Zinc Oxide",
-      "description": "ซิงค์ออกไซด์ สำหรับกระบวนการวัลคาไนซ์ยาง",
-      "category": "เคมีภัณฑ์ยาง",
-      "image": "/178372_0.jpg",
-      "code": "ZnO",
-      "specifications": [
-        { "label": "Origin", "value": "1317-11-7" },
-        { "label": "Packing", "value": "White powder" },
-        { "label": "Description", "value": "Average Description varies" }
-      ]
-    },
-    {
-      "id": 11,
-      "name": "Zinc Oxide",
-      "description": "ซิงค์ออกไซด์ สำหรับกระบวนการวัลคาไนซ์ยาง",
-      "category": "เคมีภัณฑ์ยาง",
-      "image": "/178373_0.jpg",
-      "code": "ZnO",
-      "specifications": [
-        { "label": "Origin", "value": "1317-11-7" },
-        { "label": "Packing", "value": "White powder" },
-        { "label": "Description", "value": "Average Description varies" }
-      ]
-    },
-    {
-      "id": 12,
-      "name": "Zinc Oxide",
-      "description": "ซิงค์ออกไซด์ สำหรับกระบวนการวัลคาไนซ์ยาง",
-      "category": "เคมีภัณฑ์ยาง",
-      "image": "/178374_0.jpg",
-      "code": "ZnO",
-      "specifications": [
-        { "label": "Origin", "value": "1317-11-7" },
-        { "label": "Packing", "value": "White powder" },
-        { "label": "Description", "value": "Average Description varies" }
-      ]
-    },
-    {
-      "id": 13,
-      "name": "Zinc Oxide",
-      "description": "ซิงค์ออกไซด์ สำหรับกระบวนการวัลคาไนซ์ยาง",
-      "category": "เคมีภัณฑ์ยาง",
-      "image": "/178375_0.jpg",
-      "code": "ZnO",
-      "specifications": [
-        { "label": "Origin", "value": "1317-11-7" },
-        { "label": "Packing", "value": "White powder" },
-        { "label": "Description", "value": "Average Description varies" }
-      ]
-    },
-    {
-      "id": 14,
-      "name": "Zinc Oxide",
-      "description": "ซิงค์ออกไซด์ สำหรับกระบวนการวัลคาไนซ์ยาง",
-      "category": "เคมีภัณฑ์ยาง",
-      "image": "/178376_0.jpg",
-      "code": "ZnO",
-      "specifications": [
-        { "label": "Origin", "value": "1317-11-7" },
-        { "label": "Packing", "value": "White powder" },
-        { "label": "Description", "value": "Average Description varies" }
-      ]
-    },
-    {
-      "id": 15,
-      "name": "Zinc Oxide",
-      "description": "ซิงค์ออกไซด์ สำหรับกระบวนการวัลคาไนซ์ยาง",
-      "category": "เคมีภัณฑ์ยาง",
-      "image": "/178377_0.jpg",
-      "code": "ZnO",
-      "specifications": [
-        { "label": "Origin", "value": "1317-11-7" },
-        { "label": "Packing", "value": "White powder" },
-        { "label": "Description", "value": "Average Description varies" }
-      ]
-    }
-  ]
-  
+  {
+    "id": 1,
+    "name": "SK 3000",
+    "description": "ชื่อทางเคมี โคโพลีเมอร์สไตรีน-บิวทาไดอีน และ เมททิล เมทาไทเลท",
+    "category": "-",
+    "image": "/178363_0.jpg",
+    "code": "-",
+    "specifications": [
+      {
+        "label": "Origin",
+        "value": "Korea"
+      },
+      {
+        "label": "Packing",
+        "value": "110 KG"
+      }
+    ],
+    "detail": "<ul><li>- ลักษณะทางกายภาพ Milky liquid</li><li>- Acceleratorน้ำ ใช้กับLatex</li><li>-สามารถปรับปรุงการยึดเกาะและคุณสมบัติทางกายภาพ โดยการเพิ่มสารธรรมชาติและสารสังเคราะห์</li><li>- คุณสมบัติ มีความแข็งแรงในการดัดงอและความยืดหยุ่นที่ดีเมื่อเคลือบผ้าฝ้าย</li><li>- กาวสำหรับยึดผ้าและยางให้เชื่อมติดกัน</li></ul>"
+  },
+  {
+    "id": 2,
+    "name": "Tokusil 233 Packing 20Kg",
+    "description": "TOKUSIL",
+    "category": "-",
+    "image": "/178364_0.jpg",
+    "code": "-",
+    "specifications": [
+      {
+        "label": "Origin",
+        "value": "Thailand"
+      },
+      {
+        "label": "Packing",
+        "value": "20 KG"
+      }
+    ],
+    "detail": "<ul><li>- สารป้องกันการจับตัวเป็นก้อน(Anticaking) เป็นสารนำพาและช่วยในการแพร่กระจายสารเคมี ป้องกันการเกาะตัวเป็นก้อนจากความชื้น</li><li>- เป็นตัวช่วยการไหลเวียนในอุตสาหกรรมต่างๆ</li></ul>"
+  },
+  {
+    "id": 3,
+    "name": "Tokusil 255G Packing 25kg.",
+    "description": "TOKUSIL",
+    "category": "-",
+    "image": "/178365_0.jpg",
+    "code": "-",
+    "specifications": [
+      {
+        "label": "Origin",
+        "value": "Thailand"
+      },
+      {
+        "label": "Packing",
+        "value": "25 KG"
+      }
+    ],
+    "detail": "<ul><li>- สารป้องกันการจับตัวเป็นก้อน(Anticaking) เป็นสารนำพาและช่วยในการแพร่กระจายสารเคมี ป้องกันการเกาะตัวเป็นก้อนจากความชื้</li><li>- เป็นตัวช่วยการไหลเวียนในอุตสาหกรรมต่างๆ</li></ul>"
+  },
+  {
+    "id": 4,
+    "name": "Tokusil 255  Packing 25Kg.",
+    "description": "TOKUSIL",
+    "category": "-",
+    "image": "/178366_0.jpg",
+    "code": "-",
+    "specifications": [
+      {
+        "label": "Origin",
+        "value": "Thailand"
+      },
+      {
+        "label": "Packing",
+        "value": "25 KG"
+      }
+    ],
+    "detail": "<ul><li>- สารป้องกันการจับตัวเป็นก้อน(Anticaking) เป็นสารนำพาและช่วยในการแพร่กระจายสารเคมี ป้องกันการเกาะตัวเป็นก้อนจากความชื้</li><li>- เป็นตัวช่วยการไหลเวียนในอุตสาหกรรมต่างๆ</li></ul>"
+  },
+  {
+    "id": 5,
+    "name": "Tokusil HOA Packing 20Kg",
+    "description": "TOKUSIL",
+    "category": "-",
+    "image": "/178367_0.jpg",
+    "code": "-",
+    "specifications": [
+      {
+        "label": "Origin",
+        "value": "Thailand"
+      },
+      {
+        "label": "Packing",
+        "value": "20 KG"
+      }
+    ],
+    "detail": "<ul><li>- สารป้องกันการจับตัวเป็นก้อน(Anticaking) เป็นสารนำพาและช่วยในการแพร่กระจายสารเคมี ป้องกันการเกาะตัวเป็นก้อนจากความชื้</li><li>- เป็นตัวช่วยการไหลเวียนในอุตสาหกรรมต่างๆ</li></ul>"
+  },
+  {
+    "id": 6,
+    "name": "น้ำสบู่",
+    "description": "ซิงค์ออกไซด์ สำหรับกระบวนการวัลคาไนซ์ยาง",
+    "category": "เคมีภัณฑ์ยาง",
+    "image": "/178368_0.jpg",
+    "code": "-",
+    "specifications": [
+      {
+        "label": "Origin",
+        "value": "Thailand"
+      },
+      {
+        "label": "Packing",
+        "value": "30 KG"
+      },
+      {
+        "label": "Description",
+        "value": "-"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Citric Acid Monohydrate",
+    "description": "Citric Acid",
+    "category": "-",
+    "image": "/178369_0.jpg",
+    "code": "-",
+    "specifications": [
+      {
+        "label": "Origin",
+        "value": "Thailand"
+      },
+      {
+        "label": "Packing",
+        "value": "25 KG"
+      }
+    ],
+    "detail": "มีลักษณะเป็นผงผลึกสีขาว รสเปรี้ยว ละลายน้ำได้ดี และมีความปลอดภัยสูง เหมาะสำหรับใช้ในอุตสาหกรรมอาหาร ยา และการทำความสะอาดคราบหินปูน"
+  },
+  {
+    "id": 8,
+    "name": "DAREX413",
+    "description": "Parafinic Oil",
+    "category": "-",
+    "image": "/178370_0.jpg",
+    "code": "-",
+    "specifications": [
+      {
+        "label": "Origin",
+        "value": "-"
+      },
+      {
+        "label": "Packing",
+        "value": "200 L"
+      }
+    ],
+    "detail": "<ul><li>- เป็นProcessing oil ใช้ผสมในยางเพื่อช่วยให้ยางเข้ากันได้ดี light color</li><li>- เป็นBase ของน้ำมันเครื่อง</li></ul>"
+  },
+  {
+    "id": 9,
+    "name": "DR 603",
+    "description": "Reinforcing",
+    "category": "-",
+    "image": "/178371_0.jpg",
+    "code": "-",
+    "specifications": [
+      {
+        "label": "Origin",
+        "value": "Korea"
+      },
+      {
+        "label": "Packing",
+        "value": "20 KG"
+      }
+    ],
+    "detail": "<ul><li>- สารเสริมแรงในยาง</li></ul>"
+  },
+  {
+    "id": 10,
+    "name": "Escorez 5600",
+    "description": "Tackifying Resin",
+    "category": "-",
+    "image": "/178372_0.jpg",
+    "code": "-",
+    "specifications": [
+      {
+        "label": "Origin",
+        "value": "China"
+      },
+      {
+        "label": "Packing",
+        "value": "25 KG"
+      }
+    ],
+    "detail": "<ul><li>- Escorez™ 5600 ของบริษัท ExxonMobil Chemical เป็นเรซินไฮโดรคาร์บอนไซโคลอะลิฟาติกที่ดัดแปลงด้วยอะโรมาติกสีอ่อน เรซินนี้ได้รับการออกแบบมาเพื่อยึดติดโพลีเมอร์ประเภทกาวต่างๆ รวมถึงโพลีเมอร์บล็อก EVA, SIS และ SEBS ใช้ในงานกาว</li></ul>"
+  },
+  {
+    "id": 11,
+    "name": "Hi-Flow(MI)",
+    "description": "ZincStearate",
+    "category": "-",
+    "image": "/178373_0.jpg",
+    "code": "-",
+    "specifications": [
+      {
+        "label": "Origin",
+        "value": "Korea"
+      },
+      {
+        "label": "Packing",
+        "value": "20 KG"
+      }
+    ],
+    "detail": "<ul><li>- เป็นสารหล่อลื่น สารปลดแม่พิมพ์ และสารปัดฝุ่นสำหรับยาง ช่วยป้องกันไม่ให้ยางเกาะติดกับแม่พิมพ์และตัวยางเอง</li></ul>"
+  },
+  {
+    "id": 12,
+    "name": "Kalzin",
+    "description": "Zinc Oxide 37%",
+    "category": "เคมีภัณฑ์ยาง",
+    "image": "/178374_0.jpg",
+    "code": "ZnO",
+    "specifications": [
+      {
+        "label": "Origin",
+        "value": "Korea"
+      },
+      {
+        "label": "Packing",
+        "value": "20 KG"
+      }
+    ],
+    "detail": "<ul><li>- Zinc Oxide Wet process มี Particle sizeเล็กละเอียดช่วยกระจายตัวได้ดี เหมาะกับทำพื้นรองเท้า ยางในจักรยาน อะไหล่ ผลิตภัณฑ์ยางทั่วๆไป และยางสี มีคุณสมบัติสีใสขุ่น</li></ul>"
+  },
+  {
+    "id": 13,
+    "name": "Monflex PVI",
+    "description": "Retarder PVI",
+    "category": "-",
+    "image": "/178375_0.jpg",
+    "code": "-",
+    "specifications": [
+      {
+        "label": "Origin",
+        "value": "China"
+      },
+      {
+        "label": "Packing",
+        "value": "25 KG"
+      }
+    ],
+    "detail": "<ul><li>- สารเคมีที่เติมลงไปในยางเพื่อยืดระยะเวลาสกอร์ชทำให้ลดโอกาสของการเกิด ยางตายทั้งในระหว่างการเก็บรักษายางคอมพาวด์และในระหว่างกระบวนการขึ้นรูป</li></ul>"
+  },
+  {
+    "id": 14,
+    "name": "PAZ 57",
+    "description": "Tackifier and Homogenizing Agen",
+    "category": "-",
+    "image": "/178376_0.jpg",
+    "code": "-",
+    "specifications": [
+      {
+        "label": "Origin",
+        "value": "Korea"
+      },
+      {
+        "label": "Packing",
+        "value": "25 KG"
+      }
+    ],
+    "detail": "<ul><li>- ลักษณะทางกายภาพเป็นผงสีขาว</li><li>- เป็น Tackifier และ Homogenizing</li><li>- คุณภาพสม่ำเสมอและปราศจากสิ่งเจือปน</li><li>- ไม่มีสี Non stain</li><li>- มีคุณสมบัติยึดเกาะที่สมดุล</li><li>- ปรับปรุงการไหลและผลของการยึดเกาะบนสารกระจายทางกายภาพสำหรับวัสดุที่เป็นผงประมาณ 3 ถึง 5PHR</li></li></ul>"
+  },
+  {
+    "id": 15,
+    "name": "SAZ 33",
+    "description": "Dispersing & Releasing Agen",
+    "category": "-",
+    "image": "/178377_0.jpg",
+    "code": "-",
+    "specifications": [
+      {
+        "label": "Origin",
+        "value": "Korea"
+      },
+      {
+        "label": "Packing",
+        "value": "20 KG"
+      }
+    ],
+    "detail": "<ul><li>- ปรับปรุงการไหลและการปล่อยโดยไม่มีผลต่อตัวกระจายทางกายภาพสำหรับวัสดุผงที่ บรรจุ 0.5-1.0PHR</li><li>- เป็นตัวช่วยผสมให้เข้ากันได้ง่าย และหลุดร่อนจากโม Internal Releas</li><li>- ลดความเสี่ยงการไหม้จากสารประกอบที่มีปริมาณสูง</li><li>- ปรับปรุงการไหล โดยเฉพาะใน NBR และ CR ลักษณะเฉพาะ</li><li>- ปรับปรุงการไหลและการปล่อยสารประกอบสำหรับการใช้ 0.5-1.0PHR</li><li>- มีคุณสมบัติในการปลดปล่อยที่ดีสำหรับการเติมในขั้นตอนสุดท้ายของกระบวนการผสม</li><li>- มีประสิทธิภาพในการเป็นตัวกระจายตัวของวัสดุที่เป็นผง</li></ul>"
+  }
+]
