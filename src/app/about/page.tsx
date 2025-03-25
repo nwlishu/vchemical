@@ -37,7 +37,7 @@ const AboutPage = () => {
               className="space-y-6"
             >
               <h2 className="text-3xl font-bold text-[#15274B]">
-                ประสบการณ์กว่า 25 ปี ในอุตสาหกรรมยาง
+                ประสบการณ์กว่า 25 ปี 
               </h2>
               <p className="text-gray-600 text-lg">
                 บริษัท วี เคมิคอล แอนด์ แมชินเนอรี่ จำกัด ก่อตั้งขึ้นในปี พ.ศ.

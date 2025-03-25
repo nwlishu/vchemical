@@ -25,26 +25,27 @@ const categories = ["ทั้งหมด", "อุตสาหกรรมเ�
 const ProductCard = ({ product }: { product: Product }) => (
   <motion.div
     initial={{ opacity: 0, y: 20 }}
-    // whileInView={{ opacity: 1, y: 0 }}
     animate={{ opacity: 1, y: 0 }}
-    // viewport={{ once: true }}
     transition={{ duration: 0.5 }}
-    className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+    className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col h-full"
   >
-    <div className="relative ">
+    <div className="relative">
       <Image
         src={product.image}
         alt={product.name}
         width={500}
         height={500}
-        // fill
-        className="max-w-full h-124 object-cover rounded "
+        className="max-w-full h-124 object-cover rounded"
       />
     </div>
-    <div className="p-6">
-      <h3 className="text-xl font-bold text-[#15274B] mb-2">{product.name}</h3>
-      <p className="text-gray-600 mb-4">{product.description}</p>
-      <div className="flex justify-between items-center">
+    <div className="p-6 flex flex-col flex-grow">
+      <h3 className="text-xl font-bold text-[#15274B] mb-2 line-clamp-1">
+        {product.name}
+      </h3>
+      <p className="text-gray-600 mb-4 line-clamp-2 flex-grow">
+        {product.description}
+      </p>
+      <div className="flex justify-between items-center mt-auto">
         <span className="text-sm text-gray-500">{product.category}</span>
         <Link
           href={`/products/${product.id}`}

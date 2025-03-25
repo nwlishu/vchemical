@@ -27,34 +27,30 @@ const ListProduct: React.FC<Product> = ({
   image,
   code,
 }) => {
-  const [position, setPosition] = useState<{ x: number; y: number } | null>(
-    null
-  );
-  const [hasEntered, setHasEntered] = useState(false);
+  const [isZoomed, setIsZoomed] = useState(false);
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   // Reset states when product changes
   useEffect(() => {
-    setPosition(null);
-    setHasEntered(false);
-  }, [id]); // Reset when product ID changes
+    setIsZoomed(false);
+    setMousePosition({ x: 0, y: 0 });
+  }, [id]);
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (!hasEntered) return;
-    const { left, top, width, height } =
-      e.currentTarget.getBoundingClientRect();
-    const x = ((e.clientX - left) / width) * 100;
-    const y = ((e.clientY - top) / height) * 100;
-    setPosition({ x, y });
+    if (!isZoomed) return;
+    const rect = e.currentTarget.getBoundingClientRect();
+    const x = ((e.clientX - rect.left) / rect.width) * 100;
+    const y = ((e.clientY - rect.top) / rect.height) * 100;
+    setMousePosition({ x, y });
   };
 
   const handleMouseEnter = () => {
-    if (hasEntered) return; // Don't do anything if we've already entered before
-    setPosition(null); // Reset zoom position
+    setIsZoomed(true);
   };
 
   const handleMouseLeave = () => {
-    setHasEntered(true); // Now allow zooming for subsequent hovers
-    setPosition(null); // Reset zoom position when leaving
+    setIsZoomed(false);
+    setMousePosition({ x: 0, y: 0 });
   };
 
   if (!id) {
@@ -89,23 +85,25 @@ const ListProduct: React.FC<Product> = ({
             <h1 className="text-3xl font-bold">ชื่อสินค้า : {name}</h1>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 p-8">
               <div
-                className="relative aspect-square overflow-hidden  group"
+                className="relative aspect-square overflow-hidden cursor-zoom-in"
                 onMouseMove={handleMouseMove}
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
               >
                 <Image
                   src={image}
                   alt={name}
                   fill
-                  className="object-contain transition-transform duration-300 group-hover:scale-150"
+                  className={`object-contain transition-transform duration-300 ${
+                    isZoomed ? "scale-150" : "scale-100"
+                  }`}
                   style={{
-                    transformOrigin: position
-                      ? `${position.x}% ${position.y}%`
-                      : "center",
+                    transformOrigin: `${mousePosition.x}% ${mousePosition.y}%`,
                   }}
-                  onMouseMove={handleMouseMove}
-                  onMouseEnter={handleMouseEnter}
-                  onMouseLeave={handleMouseLeave}
                 />
+                {isZoomed && (
+                  <div className="absolute inset-0 bg-black/5 pointer-events-none" />
+                )}
               </div>
 
               <div className="space-y-6">

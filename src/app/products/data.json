@@ -3,7 +3,7 @@
     "id": 1,
     "name": "SK 3000",
     "description": "ชื่อทางเคมี โคโพลีเมอร์สไตรีน-บิวทาไดอีน และ เมททิล เมทาไทเลท",
-    "category": "-",
+    "category": " ",
     "image": "/178363_0.jpg",
     "code": "-",
     "specifications": [
@@ -22,7 +22,7 @@
     "id": 2,
     "name": "Tokusil 233 Packing 20Kg",
     "description": "TOKUSIL",
-    "category": "-",
+    "category": " ",
     "image": "/178364_0.jpg",
     "code": "-",
     "specifications": [
@@ -41,7 +41,7 @@
     "id": 3,
     "name": "Tokusil 255G Packing 25kg.",
     "description": "TOKUSIL",
-    "category": "-",
+    "category": " ",
     "image": "/178365_0.jpg",
     "code": "-",
     "specifications": [
@@ -54,13 +54,13 @@
         "value": "25 KG"
       }
     ],
-    "detail": "<ul><li>- สารป้องกันการจับตัวเป็นก้อน(Anticaking) เป็นสารนำพาและช่วยในการแพร่กระจายสารเคมี ป้องกันการเกาะตัวเป็นก้อนจากความชื้</li><li>- เป็นตัวช่วยการไหลเวียนในอุตสาหกรรมต่างๆ</li></ul>"
+    "detail": "<ul><li>- Fillerเป็นสารเสริมแรงในยางรถยนต์ พื้นรองเท้าฯ เพื่อเพิ่มความทนทานต่อการสึกหรอและปรับปรุงสมรรถนะของยางเหมาะสำหรับการใช้งานในยางที่ต้องการความต้านทานต่อการฉีกขาดและความทนทานสูง</li></ul>"
   },
   {
     "id": 4,
     "name": "Tokusil 255  Packing 25Kg.",
     "description": "TOKUSIL",
-    "category": "-",
+    "category": " ",
     "image": "/178366_0.jpg",
     "code": "-",
     "specifications": [
@@ -79,7 +79,7 @@
     "id": 5,
     "name": "Tokusil HOA Packing 20Kg",
     "description": "TOKUSIL",
-    "category": "-",
+    "category": " ",
     "image": "/178367_0.jpg",
     "code": "-",
     "specifications": [
@@ -97,8 +97,8 @@
   {
     "id": 6,
     "name": "น้ำสบู่",
-    "description": "ซิงค์ออกไซด์ สำหรับกระบวนการวัลคาไนซ์ยาง",
-    "category": "เคมีภัณฑ์ยาง",
+    "description": "",
+    "category": "",
     "image": "/178368_0.jpg",
     "code": "-",
     "specifications": [
@@ -120,7 +120,7 @@
     "id": 7,
     "name": "Citric Acid Monohydrate",
     "description": "Citric Acid",
-    "category": "-",
+    "category": " ",
     "image": "/178369_0.jpg",
     "code": "-",
     "specifications": [
@@ -139,7 +139,7 @@
     "id": 8,
     "name": "DAREX413",
     "description": "Parafinic Oil",
-    "category": "-",
+    "category": " ",
     "image": "/178370_0.jpg",
     "code": "-",
     "specifications": [
@@ -158,7 +158,7 @@
     "id": 9,
     "name": "DR 603",
     "description": "Reinforcing",
-    "category": "-",
+    "category": " ",
     "image": "/178371_0.jpg",
     "code": "-",
     "specifications": [
@@ -177,7 +177,7 @@
     "id": 10,
     "name": "Escorez 5600",
     "description": "Tackifying Resin",
-    "category": "-",
+    "category": " ",
     "image": "/178372_0.jpg",
     "code": "-",
     "specifications": [
@@ -196,7 +196,7 @@
     "id": 11,
     "name": "Hi-Flow(MI)",
     "description": "ZincStearate",
-    "category": "-",
+    "category": " ",
     "image": "/178373_0.jpg",
     "code": "-",
     "specifications": [
@@ -215,7 +215,7 @@
     "id": 12,
     "name": "Kalzin",
     "description": "Zinc Oxide 37%",
-    "category": "เคมีภัณฑ์ยาง",
+    "category": " ",
     "image": "/178374_0.jpg",
     "code": "ZnO",
     "specifications": [
@@ -234,7 +234,7 @@
     "id": 13,
     "name": "Monflex PVI",
     "description": "Retarder PVI",
-    "category": "-",
+    "category": " ",
     "image": "/178375_0.jpg",
     "code": "-",
     "specifications": [
@@ -253,7 +253,7 @@
     "id": 14,
     "name": "PAZ 57",
     "description": "Tackifier and Homogenizing Agen",
-    "category": "-",
+    "category": " ",
     "image": "/178376_0.jpg",
     "code": "-",
     "specifications": [
@@ -272,7 +272,7 @@
     "id": 15,
     "name": "SAZ 33",
     "description": "Dispersing & Releasing Agen",
-    "category": "-",
+    "category": " ",
     "image": "/178377_0.jpg",
     "code": "-",
     "specifications": [
