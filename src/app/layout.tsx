@@ -12,18 +12,11 @@ const roboto = Noto_Sans_Thai({
 export const metadata: Metadata = {
   title: "V Chemical | บริษัท วี เคมิคอล แอนด์ แมชินเนอรี่ จำกัด",
   description:
-    "V Chemical - บริษัท วี เคมิคอล แอนด์ แมชินเนอรี่ จำกัด ผู้เชี่ยวชาญด้านเคมีภัณฑ์คุณภาพสูงสำหรับอุตสาหกรรม เรามีผลิตภัณฑ์เคมีภัณฑ์คุณภาพสูงที่หลากหลายสำหรับอุตสาหกรรมเกษตรและอุตสาหกรรมยาง",
+    "V Chemical - ผู้เชี่ยวชาญด้านเคมีภัณฑ์คุณภาพสูงสำหรับอุตสาหกรรมเกษตรและอุตสาหกรรมยาง ค้นหาเคมีภัณฑ์ที่เหมาะสมสำหรับธุรกิจของคุณได้ที่นี่",
   authors: [{ name: "V-Chemical" }],
   creator: "V-Chemical",
   publisher: "V-Chemical",
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-    },
-  },
+  robots: "index, follow",
   openGraph: {
     type: "website",
     locale: "th_TH",
@@ -31,33 +24,31 @@ export const metadata: Metadata = {
     siteName: "V-Chemical",
     title: "V Chemical | บริษัท วี เคมิคอล แอนด์ แมชินเนอรี่ จำกัด",
     description:
-      "V Chemical - บริษัท วี เคมิคอล แอนด์ แมชินเนอรี่ จำกัด ผู้เชี่ยวชาญด้านเคมีภัณฑ์คุณภาพสูงสำหรับอุตสาหกรรม เรามีผลิตภัณฑ์เคมีภัณฑ์คุณภาพสูงที่หลากหลายสำหรับอุตสาหกรรมเกษตรและอุตสาหกรรมยาง",
+      "V Chemical - ผู้เชี่ยวชาญด้านเคมีภัณฑ์คุณภาพสูงสำหรับอุตสาหกรรมเกษตรและอุตสาหกรรมยาง ค้นหาเคมีภัณฑ์ที่เหมาะสมสำหรับธุรกิจของคุณได้ที่นี่",
     images: [
       {
-        url: "/logo.png",
-        width: 800,
-        height: 600,
+        url: "https://vchemicalandmachinery.com/logo.png",
+        width: 1200,
+        height: 630,
         alt: "V-Chemical Logo",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
+    site: "@VChemical",
     title: "V Chemical | บริษัท วี เคมิคอล แอนด์ แมชินเนอรี่ จำกัด",
     description:
-      "V Chemical - บริษัท วี เคมิคอล แอนด์ แมชินเนอรี่ จำกัด ผู้เชี่ยวชาญด้านเคมีภัณฑ์คุณภาพสูงสำหรับอุตสาหกรรม",
-    images: ["/logo.png"],
+      "V Chemical - ผู้เชี่ยวชาญด้านเคมีภัณฑ์คุณภาพสูงสำหรับอุตสาหกรรม",
+    images: ["https://vchemicalandmachinery.com/logo.png"],
   },
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 1,
-  },
+  viewport: "width=device-width, initial-scale=1, maximum-scale=1",
   icons: {
     icon: [
       {
-        url: "/logo.png",
+        url: "https://vchemicalandmachinery.com/logo.png",
         sizes: "32x32",
+        type: "image/png",
       },
     ],
   },
