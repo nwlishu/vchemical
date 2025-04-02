@@ -39,9 +39,9 @@
   },
   {
     "id": 3,
-    "name": "Tokusil 255G Packing 25kg.",
+    "name": "Tokusil 255G Packing 25kg.(Granules)",
     "description": "TOKUSIL",
-    "category": " ",
+    "category": "อุตสาหกรรมยาง",
     "image": "/178366_0.jpg",
     "code": "-",
     "specifications": [
@@ -60,7 +60,7 @@
     "id": 4,
     "name": "Tokusil 255  Packing 25Kg.",
     "description": "TOKUSIL",
-    "category": " ",
+    "category": "",
     "image": "/178365_0.jpg",
     "code": "-",
     "specifications": [
@@ -79,7 +79,7 @@
     "id": 5,
     "name": "Tokusil HOA Packing 20Kg",
     "description": "TOKUSIL",
-    "category": " ",
+    "category": "อุตสาหกรรมเกษตร",
     "image": "/178367_0.jpg",
     "code": "-",
     "specifications": [
